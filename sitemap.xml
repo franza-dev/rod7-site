@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.rod7.com.br/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/bio/rodney-hero.jpg</image:loc>
+      <image:caption>Retrato do artista Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/concept/concept-1.jpeg</image:loc>
+      <image:caption>Obra Concept — arte corporativa sustentável de Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/historias/historias-1.jpeg</image:loc>
+      <image:caption>Obra Histórias — retrato narrativo de Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/mural/mural-1.jpeg</image:loc>
+      <image:caption>Mural assinado por Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/abstrato/abstrato.jpeg</image:loc>
+      <image:caption>Obra Abstrato de Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/taki/taki-1.jpeg</image:loc>
+      <image:caption>Taki — personagem-símbolo de Rodney Silva</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

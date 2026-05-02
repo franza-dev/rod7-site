@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /js/tweaks.jsx
+Disallow: /js/tweaks-panel.jsx
+
+Sitemap: https://www.rod7.com.br/sitemap.xml

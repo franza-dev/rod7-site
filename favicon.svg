@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#000324"/>
+  <text x="32" y="44"
+        font-family="'Newsreader', 'Tiempos', Didot, serif"
+        font-style="italic"
+        font-weight="400"
+        font-size="36"
+        letter-spacing="-2"
+        fill="#e8e6dd"
+        text-anchor="middle">R<tspan fill="#3b8489">7</tspan></text>
+</svg>
