@@ -1495,7 +1495,11 @@ a.contact__big:hover { color: var(--rust); }
   }
 
   /* DRAWER (mobile menu) ----------------------------------- */
-  .drawer { width: min(86vw, 380px); padding: 18px var(--pad-x); }
+  .drawer {
+    left: auto;
+    width: min(86vw, 380px);
+    padding: 18px var(--pad-x);
+  }
   .drawer__menu a { font-size: clamp(24px, 6.4vw, 36px); padding: 12px 0; }
 }
 
