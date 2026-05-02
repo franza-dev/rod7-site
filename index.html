@@ -6,55 +6,56 @@
 <title>RODNEY SILVA — ROD7 · Artista Visual</title>
 <meta name="description" content="Site oficial do artista visual Rodney Silva — ROD7. Obras Concept, Histórias, Murais, Abstratos e a série Taki pelo Mundo.">
 
-<!-- Fonts: Bodoni Moda (display, Tom Ford-style high-contrast serif) + Jost (refined sans) + JetBrains Mono (technical accents) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,900;1,6..96,400&family=Jost:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,200;1,6..72,300;1,6..72,400&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#000324"/><text x="50" y="60" font-family="serif" font-style="italic" font-size="40" fill="#3b8489" text-anchor="middle">R7</text></svg>
+</template>
 </head>
 <body>
 
-<!-- ============================================================
-     PRELOADER
-============================================================ -->
+<!-- PRELOADER -->
 <div class="preloader" id="preloader">
   <div class="preloader__inner">
-    <div class="preloader__mark">R7</div>
+    <div class="preloader__row"><span>R</span><span>7</span></div>
     <div class="preloader__bar"><span></span></div>
-    <div class="preloader__label">CARREGANDO O ACERVO</div>
+    <div class="preloader__meta">
+      <span>RODNEY SILVA</span>
+      <span>EST. 2018</span>
+    </div>
   </div>
 </div>
 
-<!-- ============================================================
-     GRAIN OVERLAY (full-page texture)
-============================================================ -->
 <div class="grain" aria-hidden="true"></div>
 
-<!-- ============================================================
-     TOP NAVIGATION
-============================================================ -->
+<!-- NAV -->
 <header class="nav" id="nav">
   <a href="#top" class="nav__brand" aria-label="ROD7 — Início">
     <span class="nav__brand-mark">R7</span>
+    <span class="nav__brand-name">Rodney Silva</span>
   </a>
 
-  <nav class="nav__menu" aria-label="Seções">
-    <a href="#bio">Bio</a>
-    <a href="#concept">Concept</a>
-    <a href="#historias">Histórias</a>
-    <a href="#mural">Mural</a>
-    <a href="#abstrato">Abstrato</a>
-    <a href="#taki">Taki</a>
-    <a href="#contato" class="nav__cta">Contato</a>
+  <nav class="nav__menu" aria-label="Seções" data-cursor="hover">
+    <a href="#bio"><span>Bio</span><em>01</em></a>
+    <a href="#concept"><span>Concept</span><em>02</em></a>
+    <a href="#historias"><span>Histórias</span><em>03</em></a>
+    <a href="#mural"><span>Mural</span><em>04</em></a>
+    <a href="#abstrato"><span>Abstrato</span><em>05</em></a>
+    <a href="#taki"><span>Taki</span><em>06</em></a>
   </nav>
 
-  <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-    <span></span><span></span>
-  </button>
+  <div class="nav__right">
+    <a href="#contato" class="nav__cta">Contato</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<!-- Mobile drawer -->
 <aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer__head">
     <span class="drawer__mark">R7</span>
@@ -72,44 +73,39 @@
   <div class="drawer__foot">SÃO PAULO · TORONTO · MIAMI</div>
 </aside>
 
-<!-- ============================================================
-     HERO
-============================================================ -->
+<!-- HERO -->
 <section class="hero" id="top">
-  <div class="hero__meta hero__meta--tl">
-    <span>EST. 2018</span>
-    <span>—</span>
-    <span>ARTE&nbsp;CONTEMPORÂNEA</span>
-  </div>
-  <div class="hero__meta hero__meta--tr">
-    <span>BR · CA · US</span>
+  <div class="hero__stage">
+    <div class="hero__giant" aria-hidden="true"><span>R</span></div>
+
+    <figure class="hero__portrait">
+      <img src="images/bio/rodney-hero.jpg" alt="Retrato do artista Rodney Silva — ROD7" loading="eager">
+    </figure>
+
+    <div class="hero__title-wrap">
+      <span class="hero__eyebrow scramble" data-text="ARTISTA VISUAL · BR">ARTISTA VISUAL · BR</span>
+      <h1 class="hero__title">
+        <span class="scramble" data-text="ROD">ROD</span><span class="hero__title-7"><em>7</em></span>
+      </h1>
+      <p class="hero__sub">Há mais de duas décadas transitando entre publicidade, moda e arte — hoje o estúdio é o seu único endereço.</p>
+    </div>
   </div>
 
-  <figure class="hero__portrait">
-    <img src="images/bio/rodney-hero.jpg" alt="Retrato do artista Rodney Silva — ROD7" loading="eager">
-  </figure>
-
-  <div class="hero__title-wrap">
-    <span class="hero__eyebrow">— ARTISTA&nbsp;VISUAL</span>
-    <h1 class="hero__title">ROD<span class="hero__title-7">7</span></h1>
-  </div>
-
-  <div class="hero__meta hero__meta--bl">
-    <span>SCROLL</span>
-    <span class="hero__arrow">↓</span>
-  </div>
-  <div class="hero__meta hero__meta--br">
-    <span>VIVER&nbsp;O&nbsp;PRESENTE,</span>
-    <span>COM&nbsp;INTENSIDADE&nbsp;E&nbsp;VERDADE.</span>
+  <div class="hero__footer">
+    <div><span>Estabelecido</span><strong>2018</strong></div>
+    <div><span>Direção</span><strong>BR · CA · US</strong></div>
+    <div><span>Lema</span><strong>Viver o presente</strong></div>
+    <div><span class="hero__scroll">Scroll</span></div>
   </div>
 </section>
 
-<!-- ============================================================
-     INTRO STATEMENT
-============================================================ -->
+<!-- STATEMENT -->
 <section class="statement" id="statement">
-  <div class="statement__index">— I.</div>
-  <p class="statement__text">
+  <div class="statement__index">
+    <span>— I.</span>
+    <span>STATEMENT</span>
+  </div>
+  <p class="statement__text reveal">
     Há mais de vinte anos transitando entre <em>publicidade</em>, <em>moda</em> e <em>arte</em>,
     Rodney decidiu escutar a única voz que nunca deixou de chamar.
     Vendeu sua agência, abraçou a tinta e fez do estúdio o seu novo endereço.
@@ -119,355 +115,406 @@
   </p>
 </section>
 
-<!-- ============================================================
-     BIO  (01)
-============================================================ -->
-<section class="section section--bio" id="bio">
-  <header class="section__head">
-    <span class="section__num">01</span>
-    <h2 class="section__title">Biografia</h2>
-    <span class="section__tag">— RODNEY&nbsp;SILVA</span>
-  </header>
+<!-- BIO (01) -->
+<section class="section section--light" id="bio">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Biografia</h2>
+      <span class="section__tag">— RODNEY SILVA</span>
+    </header>
 
-  <div class="bio">
-    <figure class="bio__portrait">
-      <img src="images/bio/rod-4.jpeg" alt="Retrato do artista Rodney Silva" loading="lazy">
-      <figcaption>Rodney Silva · estúdio</figcaption>
-    </figure>
+    <div class="bio">
+      <figure class="bio__portrait reveal">
+        <img src="images/bio/rod-4.jpeg" alt="Retrato do artista Rodney Silva no estúdio">
+        <figcaption>Rodney Silva · estúdio</figcaption>
+      </figure>
 
-    <div class="bio__copy">
-      <p class="bio__lead">
-        Inspirado por Deus e influenciado pelos lugares por onde passou,
-        construiu uma carreira de duas décadas em <em>publicidade</em>,
-        <em>marketing</em>, <em>eventos</em> e <em>moda</em>.
-      </p>
-      <p>
-        Desde a adolescência nutria uma paixão silenciosa pela arte. Seu primeiro trabalho foi
-        numa marcenaria, onde aprendeu a olhar para retalhos de madeira como matéria viva — uma
-        gramática de formas que reapareceria, anos depois, em sua obra.
-      </p>
-      <p>
-        Formou-se em Publicidade e Marketing e dirigiu a própria agência por mais de dez anos.
-        Em um gesto raro, decidiu vender o negócio e abraçar a arte como estilo de vida.
-        Desde 2018, é a sua atividade principal.
-      </p>
-      <p>
-        Já expôs em <em>Miami</em>, na <em>Califórnia</em> e em <em>Toronto</em>. Suas mostras
-        em galerias canadenses e o convite da <em>Todeschini</em> para ocupar o showroom da
-        marca são marcos importantes desta trajetória — toda construída de forma autodidata.
-      </p>
-      <p>
-        Acredita que a arte transcende fronteiras sociais, credos e etnias, e manifesta o
-        melhor das pessoas. Seus projetos sociais traduzem essa convicção: revitalizar
-        espaços comunitários com cor e alegria, e transformar materiais considerados lixo em
-        obras de arte — reduzindo resíduos e ampliando o sentido do que é belo.
-      </p>
+      <div class="bio__copy reveal delay-1">
+        <p class="bio__lead">
+          Inspirado por Deus e influenciado pelos lugares por onde passou,
+          construiu uma carreira de duas décadas em <em>publicidade</em>,
+          <em>marketing</em>, <em>eventos</em> e <em>moda</em>.
+        </p>
+        <p>
+          Desde a adolescência nutria uma paixão silenciosa pela arte. Seu primeiro trabalho foi
+          numa marcenaria, onde aprendeu a olhar para retalhos de madeira como matéria viva — uma
+          gramática de formas que reapareceria, anos depois, em sua obra.
+        </p>
+        <p>
+          Formou-se em Publicidade e Marketing e dirigiu a própria agência por mais de dez anos.
+          Em um gesto raro, decidiu vender o negócio e abraçar a arte como estilo de vida.
+          Desde 2018, é a sua atividade principal.
+        </p>
+        <p>
+          Já expôs em <em>Miami</em>, na <em>Califórnia</em> e em <em>Toronto</em>. Suas mostras
+          em galerias canadenses e o convite da <em>Todeschini</em> para ocupar o showroom da
+          marca são marcos importantes desta trajetória — toda construída de forma autodidata.
+        </p>
 
-      <ul class="bio__facts">
-        <li><span>2018</span><strong>Arte como atividade principal</strong></li>
-        <li><span>BR · US · CA</span><strong>Exposições internacionais</strong></li>
-        <li><span>—</span><strong>Showroom Todeschini · convite</strong></li>
-        <li><span>—</span><strong>Projetos sociais e arte sustentável</strong></li>
-      </ul>
+        <ul class="bio__facts">
+          <li><span>2018</span><strong>Arte como atividade principal</strong></li>
+          <li><span>BR · US · CA</span><strong>Exposições internacionais</strong></li>
+          <li><span>Convite</span><strong>Showroom Todeschini</strong></li>
+          <li><span>Praxis</span><strong>Projetos sociais e arte sustentável</strong></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     CONCEPT  (02)
-============================================================ -->
-<section class="section section--dark" id="concept">
-  <header class="section__head section__head--dark">
-    <span class="section__num">02</span>
-    <h2 class="section__title">Concept</h2>
-    <span class="section__tag">— ARTE&nbsp;CORPORATIVA&nbsp;SUSTENTÁVEL</span>
-  </header>
+<!-- CONCEPT (02) — featured -->
+<section class="section section--concept" id="concept">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Concept</h2>
+      <span class="section__tag">— ARTE CORPORATIVA SUSTENTÁVEL</span>
+    </header>
 
-  <div class="cover">
-    <img src="images/concept/concept-1.jpeg" alt="Obra Concept de Rodney Silva — composição em laranja com resíduos de MDF" loading="lazy">
-    <div class="cover__caption">
-      <span>SÉRIE</span>
-      <strong>Concept</strong>
+    <div class="concept-feature">
+      <figure class="concept-feature__media reveal" data-cursor="zoom">
+        <img src="images/concept/concept-1.jpeg" alt="Obra Concept de Rodney Silva — composição em laranja com resíduos de MDF">
+      </figure>
+      <div class="concept-feature__copy reveal delay-1">
+        <span class="concept-feature__pill"><span></span> SÉRIE CARRO-CHEFE</span>
+        <h3 class="concept-feature__title">A marca como manifesto. O resíduo como matéria.</h3>
+        <p class="concept-feature__text">
+          Concept transforma resíduos de MDF em quadros únicos que vestem símbolos
+          e logotipos corporativos com uma pele inédita. Cada obra é uma tradução:
+          o que iria para o lixo vira matéria de marca, e a marca ganha
+          uma assinatura impossível de reproduzir. Arte exclusiva para empresas que
+          entendem que <em>estética</em> e <em>responsabilidade</em> caminham juntas.
+        </p>
+        <div class="concept-feature__stats">
+          <div><strong>100%</strong><span>Resíduo MDF</span></div>
+          <div><strong>1/1</strong><span>Edição única</span></div>
+          <div><strong>+40</strong><span>Encomendas</span></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="prose prose--dark">
-    <p class="prose__lead">
-      Quase sempre <em>sustentável</em>, a série Concept transforma resíduos de MDF e elementos
-      que seriam descartados em quadros únicos, que vestem símbolos e logotipos corporativos
-      com uma pele inédita.
-    </p>
-    <p>
-      Cada obra é uma tradução: o que iria para o lixo vira matéria de marca, e a marca
-      ganha uma assinatura impossível de reproduzir. Arte exclusiva, feita para empresas que
-      entendem que <em>estética</em> e <em>responsabilidade</em> caminham juntas — e que um
-      logotipo pode ser, ao mesmo tempo, um manifesto.
-    </p>
+  <!-- DRAG carousel -->
+  <div class="carousel reveal" data-carousel>
+    <div class="carousel__head">
+      <h3>Acervo Concept</h3>
+      <div class="carousel__meta">
+        <span data-carousel-counter>01 / 08</span>
+        <div class="carousel__progress"><span></span></div>
+        <div class="carousel__nav">
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__viewport">
+      <div class="carousel__track">
+        <div class="carousel__slide carousel__slide--wide"><a data-img="images/concept/concept-1.jpeg" data-cursor="zoom"><img src="images/concept/concept-1.jpeg" alt="Concept · Composição em laranja" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 01</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-2.jpeg" data-cursor="zoom"><img src="images/concept/concept-2.jpeg" alt="Concept 02" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 02</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-3.jpeg" data-cursor="zoom"><img src="images/concept/concept-3.jpeg" alt="Concept 03" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 03</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/concept/concept-4.jpeg" data-cursor="zoom"><img src="images/concept/concept-4.jpeg" alt="Concept 04" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 04</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-5.jpeg" data-cursor="zoom"><img src="images/concept/concept-5.jpeg" alt="Concept 05" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 05</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-6.jpeg" data-cursor="zoom"><img src="images/concept/concept-6.jpeg" alt="Concept 06" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 06</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-7.jpeg" data-cursor="zoom"><img src="images/concept/concept-7.jpeg" alt="Concept 07" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 07</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-8.jpeg" data-cursor="zoom"><img src="images/concept/concept-8.jpeg" alt="Concept 08" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 08</strong><span>MDF · 2024</span></div></a></div>
+      </div>
+    </div>
   </div>
 
-  <div class="gallery gallery--editorial">
-    <a class="g g--big" data-img="images/concept/concept-1.jpeg"><img src="images/concept/concept-1.jpeg" alt="Concept 1" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-2.jpeg"><img src="images/concept/concept-2.jpeg" alt="Concept 2" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-3.jpeg"><img src="images/concept/concept-3.jpeg" alt="Concept 3" loading="lazy"></a>
-    <a class="g g--tall" data-img="images/concept/concept-4.jpeg"><img src="images/concept/concept-4.jpeg" alt="Concept 4" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-5.jpeg"><img src="images/concept/concept-5.jpeg" alt="Concept 5" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-6.jpeg"><img src="images/concept/concept-6.jpeg" alt="Concept 6" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-7.jpeg"><img src="images/concept/concept-7.jpeg" alt="Concept 7" loading="lazy"></a>
-    <a class="g" data-img="images/concept/concept-8.jpeg"><img src="images/concept/concept-8.jpeg" alt="Concept 8" loading="lazy"></a>
+  <div style="height: clamp(80px, 12vh, 130px)"></div>
+</section>
+
+<!-- HISTORIAS (03) -->
+<section class="section section--light" id="historias">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Histórias</h2>
+      <span class="section__tag">— RETRATOS NARRATIVOS</span>
+    </header>
+
+    <div class="prose reveal">
+      <p class="prose__lead">
+        A vida de cada cliente vira matéria-prima.
+      </p>
+      <p>
+        Em <em>Histórias</em>, Rod7 escuta — escuta de verdade — e devolve um quadro que carrega
+        um capítulo inteiro de quem encomendou. Datas, lugares, símbolos íntimos, encontros e
+        travessias se sobrepõem em camadas de cor e textura, num retrato narrativo que só faz
+        sentido para uma pessoa: a sua. Cada obra é uma autobiografia pintada — feita a quatro
+        mãos, em silêncio, e assinada uma única vez.
+      </p>
+    </div>
+  </div>
+
+  <!-- Marquee carousel -->
+  <div class="carousel carousel--marquee reveal" data-speed="55">
+    <div class="carousel__viewport">
+      <div class="carousel__track">
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-1.jpeg" data-cursor="zoom"><img src="images/historias/historias-1.jpeg" alt="Histórias 01" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 01</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-2.jpeg" data-cursor="zoom"><img src="images/historias/historias-2.jpeg" alt="Histórias 02" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 02</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-3.jpeg" data-cursor="zoom"><img src="images/historias/historias-3.jpeg" alt="Histórias 03" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 03</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-4.jpeg" data-cursor="zoom"><img src="images/historias/historias-4.jpeg" alt="Histórias 04" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 04</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-5.jpeg" data-cursor="zoom"><img src="images/historias/historias-5.jpeg" alt="Histórias 05" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 05</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-6.jpeg" data-cursor="zoom"><img src="images/historias/historias-6.jpeg" alt="Histórias 06" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 06</strong><span>Encomenda · 2024</span></div></a></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ============================================================
-     HISTÓRIAS  (03)
-============================================================ -->
-<section class="section" id="historias">
-  <header class="section__head">
-    <span class="section__num">03</span>
-    <h2 class="section__title">Histórias</h2>
-    <span class="section__tag">— RETRATOS&nbsp;NARRATIVOS</span>
-  </header>
-
-  <div class="prose">
-    <p class="prose__lead">
-      A vida de cada cliente vira matéria-prima.
-    </p>
-    <p>
-      Em <em>Histórias</em>, Rod7 escuta — escuta de verdade — e devolve um quadro que carrega
-      um capítulo inteiro de quem encomendou. Datas, lugares, símbolos íntimos, encontros e
-      travessias se sobrepõem em camadas de cor e textura, num retrato narrativo que só faz
-      sentido para uma pessoa: a sua. Cada obra é uma autobiografia pintada — feita a quatro
-      mãos, em silêncio, e assinada uma única vez.
-    </p>
-  </div>
-
-  <div class="cover cover--inset">
-    <img src="images/historias/historias-1.jpeg" alt="Obra Histórias — composição azul com elementos narrativos" loading="lazy">
-  </div>
-
-  <div class="gallery gallery--strip">
-    <a class="g" data-img="images/historias/historias-2.jpeg"><img src="images/historias/historias-2.jpeg" alt="Histórias 2" loading="lazy"></a>
-    <a class="g" data-img="images/historias/historias-3.jpeg"><img src="images/historias/historias-3.jpeg" alt="Histórias 3" loading="lazy"></a>
-    <a class="g" data-img="images/historias/historias-4.jpeg"><img src="images/historias/historias-4.jpeg" alt="Histórias 4" loading="lazy"></a>
-    <a class="g" data-img="images/historias/historias-5.jpeg"><img src="images/historias/historias-5.jpeg" alt="Histórias 5" loading="lazy"></a>
-    <a class="g" data-img="images/historias/historias-6.jpeg"><img src="images/historias/historias-6.jpeg" alt="Histórias 6" loading="lazy"></a>
-  </div>
-</section>
-
-<!-- ============================================================
-     MURAL  (04)
-============================================================ -->
+<!-- MURAL (04) -->
 <section class="section section--dark" id="mural">
-  <header class="section__head section__head--dark">
-    <span class="section__num">04</span>
-    <h2 class="section__title">Mural</h2>
-    <span class="section__tag">— ARQUITETURA&nbsp;COMO&nbsp;TELA</span>
-  </header>
-
-  <div class="cover">
-    <img src="images/mural/mural-1.jpeg" alt="Mural curvo em arco-íris assinado por Rod7" loading="lazy">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Mural</h2>
+      <span class="section__tag">— ARQUITETURA COMO TELA</span>
+    </header>
   </div>
 
-  <div class="prose prose--dark">
-    <p class="prose__lead">
-      Quando a tela é uma porta, uma fachada, uma parede inteira.
-    </p>
-    <p>
-      Os Murais expandem o gesto do quadro para a escala da arquitetura, transformando espaços
-      comuns em paisagens. Trabalhos urbanos, residenciais e institucionais que assumem o lugar
-      como obra — e o cotidiano como público. Pintar uma parede, para Rod7, é menos
-      ornamentar um espaço e mais <em>devolver alma</em> a ele.
-    </p>
-  </div>
+  <div class="section__container">
+    <div class="cover reveal">
+      <img src="images/mural/mural-1.jpeg" alt="Mural curvo em arco-íris assinado por Rod7" loading="lazy" data-parallax="0.06">
+      <div class="cover__caption">
+        <span>EM ESCALA</span>
+        <strong>Quando a tela é uma fachada inteira.</strong>
+      </div>
+    </div>
 
-  <div class="gallery gallery--mural">
-    <a class="g g--wide" data-img="images/mural/mural-2.jpeg"><img src="images/mural/mural-2.jpeg" alt="Mural 2" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural-3.jpeg"><img src="images/mural/mural-3.jpeg" alt="Mural 3" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural-4.jpeg"><img src="images/mural/mural-4.jpeg" alt="Mural 4" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural-5.jpeg"><img src="images/mural/mural-5.jpeg" alt="Mural 5" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural-6.jpeg"><img src="images/mural/mural-6.jpeg" alt="Mural 6" loading="lazy"></a>
-    <a class="g g--wide" data-img="images/mural/mural-7.jpeg"><img src="images/mural/mural-7.jpeg" alt="Mural 7" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural-8.jpeg"><img src="images/mural/mural-8.jpeg" alt="Mural 8" loading="lazy"></a>
-    <a class="g" data-img="images/mural/mural.jpeg"><img src="images/mural/mural.jpeg" alt="Mural" loading="lazy"></a>
-  </div>
-</section>
-
-<!-- ============================================================
-     ABSTRATO  (05)
-============================================================ -->
-<section class="section" id="abstrato">
-  <header class="section__head">
-    <span class="section__num">05</span>
-    <h2 class="section__title">Abstrato</h2>
-    <span class="section__tag">— GESTO&nbsp;LIVRE</span>
-  </header>
-
-  <div class="prose">
-    <p class="prose__lead">
-      Sem moldura narrativa. Aqui, a obra responde primeiro ao gesto e à matéria.
-    </p>
-    <p>
-      O Abstrato é onde Rod7 se permite o salto: cor crua, sobreposição, contraste, deriva.
-      São pinturas que pedem para serem <em>sentidas</em> antes de lidas — território livre,
-      onde o silêncio do branco encontra o ruído do pigmento, e cada camada esconde — ou
-      revela — a anterior.
-    </p>
-  </div>
-
-  <div class="gallery gallery--abstract">
-    <a class="g g--portrait" data-img="images/abstrato/abstrato.jpeg"><img src="images/abstrato/abstrato.jpeg" alt="Abstrato — peça principal" loading="lazy"></a>
-    <a class="g" data-img="images/abstrato/abstrato-1.jpeg"><img src="images/abstrato/abstrato-1.jpeg" alt="Abstrato 1" loading="lazy"></a>
-    <a class="g" data-img="images/abstrato/abstrato-2.jpeg"><img src="images/abstrato/abstrato-2.jpeg" alt="Abstrato 2" loading="lazy"></a>
-    <a class="g" data-img="images/abstrato/abstrato-3.jpeg"><img src="images/abstrato/abstrato-3.jpeg" alt="Abstrato 3" loading="lazy"></a>
-    <a class="g" data-img="images/abstrato/abstrato-4.jpeg"><img src="images/abstrato/abstrato-4.jpeg" alt="Abstrato 4" loading="lazy"></a>
-    <a class="g" data-img="images/abstrato/abstrato-5.jpeg"><img src="images/abstrato/abstrato-5.jpeg" alt="Abstrato 5" loading="lazy"></a>
-  </div>
-</section>
-
-<!-- ============================================================
-     TAKI PELO MUNDO  (06) — special section, the manifesto
-============================================================ -->
-<section class="section section--taki" id="taki">
-  <header class="section__head section__head--dark">
-    <span class="section__num">06</span>
-    <h2 class="section__title">Taki pelo Mundo</h2>
-    <span class="section__tag">— MANIFESTO</span>
-  </header>
-
-  <div class="taki">
-    <figure class="taki__hero">
-      <img src="images/taki/taki-1.jpeg" alt="Obra Taki — personagem assimétrico de Rodney Silva" loading="lazy">
-    </figure>
-
-    <div class="taki__copy">
-      <p class="taki__lead">
-        <em>Taki</em> é um coelho que simboliza o ser humano em toda a sua diversidade,
-        lembrando que ser diferente é natural — e que cada pessoa é única.
-      </p>
+    <div class="prose reveal">
+      <p class="prose__lead">Quando a tela é uma porta, uma fachada, uma parede inteira.</p>
       <p>
-        Sua <em>assimetria</em> representa quem realmente somos:
-        imperfeitos, singulares e autênticos. Nenhum de nós é igual ao outro —
-        e é justamente nisso que está a nossa beleza.
-      </p>
-      <p>
-        Ele reflete nossa <em>agilidade</em> no dia a dia
-        e a força que encontramos para nos reinventar,
-        enfrentar desafios e seguir em frente.
-      </p>
-      <p>
-        Em alguns momentos, Taki usa <em>luvas de boxe</em>,
-        representando a nossa luta diária — interna e externa — que todos vivemos.
-      </p>
-      <p>
-        Os fones simbolizam a <em>tecnologia</em> e o <em>futurismo</em>,
-        conectando-nos ao agora, ao presente que pulsa e acontece.
-      </p>
-      <p>
-        Taki não é fixo, não é estático. Ele <em>muda</em>.
-        Às vezes está mais leve, outras vezes mais intenso.
-        Às vezes maior, outras menor. Como nós.
-      </p>
-      <p class="taki__motto">
-        E o seu nome carrega esse significado:<br>
-        <strong>Viver o presente,</strong><br>
-        <strong>com intensidade e verdade.</strong>
+        Os Murais expandem o gesto do quadro para a escala da arquitetura, transformando espaços
+        comuns em paisagens. Trabalhos urbanos, residenciais e institucionais que assumem o lugar
+        como obra — e o cotidiano como público. Pintar uma parede, para Rod7, é menos
+        ornamentar um espaço e mais <em>devolver alma</em> a ele.
       </p>
     </div>
   </div>
 
-  <div class="gallery gallery--taki">
-    <a class="g" data-img="images/taki/taki-2.jpeg"><img src="images/taki/taki-2.jpeg" alt="Taki 2" loading="lazy"></a>
-    <a class="g" data-img="images/taki/taki-4.jpeg"><img src="images/taki/taki-4.jpeg" alt="Taki 4" loading="lazy"></a>
+  <div class="carousel reveal" data-carousel>
+    <div class="carousel__head">
+      <h3>Acervo Mural</h3>
+      <div class="carousel__meta">
+        <span data-carousel-counter>01 / 09</span>
+        <div class="carousel__progress"><span></span></div>
+        <div class="carousel__nav">
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__viewport">
+      <div class="carousel__track">
+        <div class="carousel__slide carousel__slide--wide"><a data-img="images/mural/mural-2.jpeg" data-cursor="zoom"><img src="images/mural/mural-2.jpeg" alt="Mural 02" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 02</strong><span>Externo</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-3.jpeg" data-cursor="zoom"><img src="images/mural/mural-3.jpeg" alt="Mural 03" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 03</strong><span>Residencial</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-4.jpeg" data-cursor="zoom"><img src="images/mural/mural-4.jpeg" alt="Mural 04" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 04</strong><span>Institucional</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-5.jpeg" data-cursor="zoom"><img src="images/mural/mural-5.jpeg" alt="Mural 05" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 05</strong><span>Urbano</span></div></a></div>
+        <div class="carousel__slide carousel__slide--wide"><a data-img="images/mural/mural-6.jpeg" data-cursor="zoom"><img src="images/mural/mural-6.jpeg" alt="Mural 06" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 06</strong><span>Externo</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-7.jpeg" data-cursor="zoom"><img src="images/mural/mural-7.jpeg" alt="Mural 07" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 07</strong><span>Residencial</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-8.jpeg" data-cursor="zoom"><img src="images/mural/mural-8.jpeg" alt="Mural 08" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 08</strong><span>Detalhe</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural.jpeg" data-cursor="zoom"><img src="images/mural/mural.jpeg" alt="Mural" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 09</strong><span>Detalhe</span></div></a></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ============================================================
-     CONTACT  (07)
-============================================================ -->
-<section class="section section--contact" id="contato">
-  <header class="section__head">
-    <span class="section__num">07</span>
-    <h2 class="section__title">Contato</h2>
-    <span class="section__tag">— ENCOMENDAS&nbsp;E&nbsp;EXPOSIÇÕES</span>
-  </header>
+<!-- ABSTRATO (05) -->
+<section class="section section--light" id="abstrato">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Abstrato</h2>
+      <span class="section__tag">— GESTO LIVRE</span>
+    </header>
 
-  <div class="contact">
-    <p class="contact__lead">
-      Para encomendas particulares, projetos corporativos, parcerias com galerias
-      ou convites para exposições.
-    </p>
+    <div class="prose reveal">
+      <p class="prose__lead">
+        Sem moldura narrativa. Aqui, a obra responde primeiro ao gesto e à matéria.
+      </p>
+      <p>
+        O Abstrato é onde Rod7 se permite o salto: cor crua, sobreposição, contraste, deriva.
+        São pinturas que pedem para serem <em>sentidas</em> antes de lidas — território livre,
+        onde o silêncio do branco encontra o ruído do pigmento.
+      </p>
+    </div>
+  </div>
 
-    <a class="contact__cta"
-       href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site."
-       target="_blank"
-       rel="noopener">
-      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <path d="M16.001 3.2C8.93 3.2 3.2 8.93 3.2 16c0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.56-1.71A12.78 12.78 0 0 0 16 28.8c7.07 0 12.8-5.73 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05A12.74 12.74 0 0 0 16.001 3.2zm0 23.36a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-3.89 1.02 1.04-3.79-.25-.4A10.6 10.6 0 1 1 26.6 16c0 5.85-4.75 10.56-10.6 10.56zm5.81-7.92c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.77-2.19-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.4-.29.32-1.1 1.07-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.4 5.38 4.77.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.37.18-1.51-.08-.13-.29-.21-.61-.37z"/>
-      </svg>
-      <span>Falar no WhatsApp</span>
-    </a>
+  <div class="carousel reveal" data-carousel>
+    <div class="carousel__head">
+      <h3>Acervo Abstrato</h3>
+      <div class="carousel__meta">
+        <span data-carousel-counter>01 / 06</span>
+        <div class="carousel__progress"><span></span></div>
+        <div class="carousel__nav">
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__viewport">
+      <div class="carousel__track">
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/abstrato/abstrato.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato.jpeg" alt="Abstrato — peça principal" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 00</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-1.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-1.jpeg" alt="Abstrato 01" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 01</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-2.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-2.jpeg" alt="Abstrato 02" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 02</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-3.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-3.jpeg" alt="Abstrato 03" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 03</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-4.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-4.jpeg" alt="Abstrato 04" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 04</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-5.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-5.jpeg" alt="Abstrato 05" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 05</strong><span>Tela</span></div></a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="contact__grid">
-      <div>
-        <span class="contact__label">E-mail</span>
-        <a class="contact__big" href="mailto:rod.7arte@gmail.com">rod.7arte@gmail.com</a>
-      </div>
-      <div>
-        <span class="contact__label">WhatsApp</span>
-        <a class="contact__big" href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site." target="_blank" rel="noopener">+55&nbsp;11&nbsp;96374-2579</a>
-      </div>
-      <div>
-        <span class="contact__label">Estúdio</span>
-        <p class="contact__big contact__big--alt">São Paulo · Brasil</p>
-      </div>
-      <div>
-        <span class="contact__label">Direção</span>
-        <p class="contact__big contact__big--alt">São Paulo&nbsp;·&nbsp;Toronto&nbsp;·&nbsp;Miami</p>
-      </div>
-      <div>
-        <span class="contact__label">Social</span>
-        <p class="contact__links">
-          <a href="https://www.instagram.com/rod7arte/" target="_blank" rel="noopener">@rod7arte</a>
+<!-- TAKI (06) — manifesto -->
+<section class="section section--taki" id="taki">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">06</span>
+      <h2 class="section__title">Taki pelo Mundo</h2>
+      <span class="section__tag">— MANIFESTO</span>
+    </header>
+
+    <div class="taki">
+      <figure class="taki__hero reveal" data-cursor="zoom">
+        <img src="images/taki/taki-1.jpeg" alt="Obra Taki — personagem assimétrico de Rodney Silva" loading="lazy">
+      </figure>
+
+      <div class="taki__copy reveal delay-1">
+        <p class="taki__lead">
+          <em>Taki</em> é um coelho que simboliza o ser humano em toda a sua diversidade,
+          lembrando que ser diferente é natural — e que cada pessoa é única.
+        </p>
+        <p>Sua <em>assimetria</em> representa quem realmente somos: imperfeitos, singulares e autênticos. Nenhum de nós é igual ao outro — e é justamente nisso que está a nossa beleza.</p>
+        <p>Ele reflete nossa <em>agilidade</em> no dia a dia e a força que encontramos para nos reinventar, enfrentar desafios e seguir em frente.</p>
+        <p>Em alguns momentos, Taki usa <em>luvas de boxe</em>, representando a nossa luta diária — interna e externa — que todos vivemos.</p>
+        <p>Os fones simbolizam a <em>tecnologia</em> e o <em>futurismo</em>, conectando-nos ao agora, ao presente que pulsa e acontece.</p>
+        <p>Taki não é fixo, não é estático. Ele <em>muda</em>. Às vezes está mais leve, outras vezes mais intenso. Como nós.</p>
+        <p class="taki__motto">
+          E o seu nome carrega esse significado:<br>
+          <strong>Viver o presente,</strong>
+          <strong>com intensidade e verdade.</strong>
         </p>
       </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer__row">
-      <span class="footer__mark">R7</span>
-      <span>© <span id="year"></span> RODNEY&nbsp;SILVA. TODOS&nbsp;OS&nbsp;DIREITOS&nbsp;RESERVADOS.</span>
-      <span>VIVER O PRESENTE — COM INTENSIDADE E VERDADE</span>
+  <div class="carousel reveal" data-carousel style="margin-top: clamp(60px, 10vh, 100px); position: relative; z-index: 1;">
+    <div class="carousel__head">
+      <h3>Taki · acervo</h3>
+      <div class="carousel__meta">
+        <span data-carousel-counter>01 / 02</span>
+        <div class="carousel__progress"><span></span></div>
+        <div class="carousel__nav">
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+        </div>
+      </div>
     </div>
-  </footer>
+    <div class="carousel__viewport">
+      <div class="carousel__track">
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-2.jpeg" data-cursor="zoom"><img src="images/taki/taki-2.jpeg" alt="Taki 02" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 02</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-4.jpeg" data-cursor="zoom"><img src="images/taki/taki-4.jpeg" alt="Taki 04" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 04</strong><span>Tela</span></div></a></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ============================================================
-     LIGHTBOX
-============================================================ -->
+<!-- CONTACT (07) -->
+<section class="section section--light section--contact" id="contato">
+  <div class="section__container">
+    <header class="section__head reveal">
+      <span class="section__num">07</span>
+      <h2 class="section__title">Contato</h2>
+      <span class="section__tag">— ENCOMENDAS E EXPOSIÇÕES</span>
+    </header>
+
+    <div class="contact">
+      <p class="contact__lead reveal">
+        <em>Para encomendas particulares, projetos corporativos,</em><br>
+        parcerias com galerias ou convites para exposições.
+      </p>
+
+      <a class="contact__cta reveal"
+         href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site."
+         target="_blank"
+         rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16.001 3.2C8.93 3.2 3.2 8.93 3.2 16c0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.56-1.71A12.78 12.78 0 0 0 16 28.8c7.07 0 12.8-5.73 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05A12.74 12.74 0 0 0 16.001 3.2zm0 23.36a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-3.89 1.02 1.04-3.79-.25-.4A10.6 10.6 0 1 1 26.6 16c0 5.85-4.75 10.56-10.6 10.56zm5.81-7.92c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.77-2.19-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.4-.29.32-1.1 1.07-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.4 5.38 4.77.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.37.18-1.51-.08-.13-.29-.21-.61-.37z"/>
+        </svg>
+        <span>Falar no WhatsApp</span>
+      </a>
+
+      <div class="contact__grid reveal">
+        <div>
+          <span class="contact__label">E-mail</span>
+          <a class="contact__big" href="/cdn-cgi/l/email-protection#6b19040f455c0a191f0e2b0c060a020745080406"><span class="__cf_email__" data-cfemail="c0b2afa4eef7a1b2b4a580a7ada1a9aceea3afad">[email&#160;protected]</span></a>
+        </div>
+        <div>
+          <span class="contact__label">WhatsApp</span>
+          <a class="contact__big" href="https://wa.me/5511963742579" target="_blank" rel="noopener">+55 11 96374-2579</a>
+        </div>
+        <div>
+          <span class="contact__label">Estúdio</span>
+          <p class="contact__big contact__big--alt">São Paulo · Brasil</p>
+        </div>
+        <div>
+          <span class="contact__label">Direção</span>
+          <p class="contact__big contact__big--alt">SP · Toronto · Miami</p>
+        </div>
+        <div>
+          <span class="contact__label">Social</span>
+          <p class="contact__links">
+            <a href="https://www.instagram.com/rod7arte/" target="_blank" rel="noopener">@rod7arte</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <span class="footer__mark">R7</span>
+        <span>© <span id="year"></span> RODNEY SILVA · TODOS OS DIREITOS RESERVADOS</span>
+        <span>VIVER O PRESENTE — COM INTENSIDADE E VERDADE</span>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox__close" id="lbClose" aria-label="Fechar">×</button>
   <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">‹</button>
   <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima">›</button>
   <figure class="lightbox__figure">
-    <img id="lbImg" src="" alt="">
+    <img id="lbImg" alt="">
     <figcaption id="lbCap"></figcaption>
   </figure>
 </div>
 
-<!-- ============================================================
-     FLOATING WHATSAPP
-============================================================ -->
+<!-- FLOATING WHATSAPP -->
 <a class="wa-float"
    href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site."
    target="_blank"
    rel="noopener"
    aria-label="Falar com Rodney pelo WhatsApp">
-  <svg class="wa-float__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-    <path d="M16.001 3.2C8.93 3.2 3.2 8.93 3.2 16c0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.56-1.71A12.78 12.78 0 0 0 16 28.8c7.07 0 12.8-5.73 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05A12.74 12.74 0 0 0 16.001 3.2zm0 23.36a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-3.89 1.02 1.04-3.79-.25-.4A10.6 10.6 0 1 1 26.6 16c0 5.85-4.75 10.56-10.6 10.56zm5.81-7.92c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.77-2.19-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.4-.29.32-1.1 1.07-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.4 5.38 4.77.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.37.18-1.51-.08-.13-.29-.21-.61-.37z"/>
+  <svg class="wa-float__icon" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16.001 3.2C8.93 3.2 3.2 8.93 3.2 16c0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.56-1.71A12.78 12.78 0 0 0 16 28.8c7.07 0 12.8-5.73 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05A12.74 12.74 0 0 0 16.001 3.2zm0 23.36a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-3.89 1.02 1.04-3.79-.25-.4A10.6 10.6 0 1 1 26.6 16c0 5.85-4.75 10.56-10.6 10.56z"/>
   </svg>
   <span class="wa-float__label">WhatsApp</span>
 </a>
 
-<script src="js/main.js" defer></script>
+<!-- TWEAKS root -->
+<div id="tweaks-root"></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js" defer></script>
+<script src="js/carousels.js" defer></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="js/tweaks-panel.jsx"></script>
+<script type="text/babel" src="js/tweaks.jsx"></script>
+
 </body>
 </html>
