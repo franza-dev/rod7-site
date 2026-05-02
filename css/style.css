@@ -198,15 +198,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   letter-spacing: -.02em;
   line-height: 1;
 }
-.nav__brand-mark::after { content: "."; color: var(--rust-3); font-style: normal; }
-.nav__brand-name {
-  font-family: var(--mono);
-  font-size: 10px; letter-spacing: .32em;
-  text-transform: uppercase;
-  display: none;
-  opacity: .7;
+.nav__brand-mark em {
+  font-style: italic;
+  color: var(--rust-3);
 }
-@media (min-width: 760px) { .nav__brand-name { display: inline; } }
+.nav__brand-name { display: none; }
 
 .nav__menu {
   display: none;
@@ -218,11 +214,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .nav__menu a {
   font-family: var(--mono);
   font-size: 10px;
-  letter-spacing: .28em;
+  letter-spacing: .24em;
   text-transform: uppercase;
   position: relative;
-  padding: 8px 0;
-  transition: color .25s;
+  padding: 8px 14px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  opacity: .7;
+  transition: color .25s var(--ease), background .25s var(--ease), border-color .25s var(--ease), opacity .25s var(--ease);
   display: inline-flex; align-items: baseline; gap: 6px;
 }
 .nav__menu a em {
@@ -233,16 +232,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transform: translateY(-2px);
   transition: opacity .3s, transform .3s;
 }
+.nav__menu a:hover,
+.nav__menu a.is-active {
+  opacity: 1;
+  border-color: var(--rust-3);
+  color: var(--rust-3);
+}
 .nav__menu a:hover em,
 .nav__menu a.is-active em { opacity: 1; transform: none; }
-.nav__menu a::after {
-  content: "";
-  position: absolute; left: 0; right: 100%; bottom: -2px;
-  height: 1px; background: var(--rust-3);
-  transition: right .45s var(--ease);
-}
-.nav__menu a:hover::after,
-.nav__menu a.is-active::after { right: 0; }
 
 .nav__right {
   justify-self: end;
@@ -1306,8 +1303,8 @@ a.contact__big:hover { color: var(--rust); }
   height: 56px;
   padding: 0 18px 0 16px;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--bone);
+  background: #25D366;
+  color: #ffffff;
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 500;
@@ -1315,18 +1312,18 @@ a.contact__big:hover { color: var(--rust); }
   text-transform: uppercase;
   white-space: nowrap;
   box-shadow:
-    0 1px 0 rgba(255,255,255,.06) inset,
-    0 10px 30px rgba(0,3,36,.35),
-    0 2px 6px rgba(0,3,36,.25);
+    0 1px 0 rgba(255,255,255,.18) inset,
+    0 10px 30px rgba(37,211,102,.38),
+    0 2px 6px rgba(0,0,0,.18);
   transition: transform .35s var(--ease), background .35s var(--ease), box-shadow .35s var(--ease);
 }
 .wa-float:hover {
-  background: var(--rust);
+  background: #1FAA52;
   transform: translateY(-2px);
   box-shadow:
-    0 1px 0 rgba(255,255,255,.10) inset,
-    0 14px 36px rgba(30,81,85,.45),
-    0 2px 6px rgba(0,3,36,.25);
+    0 1px 0 rgba(255,255,255,.22) inset,
+    0 14px 36px rgba(37,211,102,.50),
+    0 2px 6px rgba(0,0,0,.20);
 }
 .wa-float__icon { width: 24px; height: 24px; fill: currentColor; flex-shrink: 0; }
 .wa-float__label { display: inline-block; margin-left: 10px; }
