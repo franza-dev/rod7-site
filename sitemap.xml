@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://www.rod7.com.br/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
 
@@ -31,6 +31,10 @@
     <image:image>
       <image:loc>https://www.rod7.com.br/images/taki/taki-1.jpeg</image:loc>
       <image:caption>Taki — personagem-símbolo de Rodney Silva</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rod7.com.br/images/escultura/escultura-1.jpeg</image:loc>
+      <image:caption>Escultura contemporânea autoral — obra tridimensional de Rodney Silva</image:caption>
     </image:image>
   </url>
 
