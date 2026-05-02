@@ -943,13 +943,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   padding: 0 var(--pad-x);
   will-change: transform;
 }
+/* Uniform square gallery — same width for every variant.
+   The original aspect ratio is preserved in the lightbox (object-fit: contain). */
 .carousel__slide {
   flex: 0 0 auto;
   position: relative;
-  width: clamp(280px, 36vw, 580px);
+  width: clamp(280px, 36vw, 480px);
 }
-.carousel__slide--tall { width: clamp(240px, 28vw, 440px); }
-.carousel__slide--wide { width: clamp(360px, 56vw, 880px); }
+.carousel__slide--tall,
+.carousel__slide--wide { width: clamp(280px, 36vw, 480px); }
 
 .carousel__slide a {
   display: block;
@@ -959,14 +961,18 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .carousel__slide a img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: center;
   transition: transform 1.2s var(--ease), filter .6s var(--ease);
   filter: contrast(1.04);
   pointer-events: none;
 }
-.carousel__slide--portrait a img { aspect-ratio: 3/4; }
-.carousel__slide--square a img { aspect-ratio: 1/1; }
+/* Modifier classes kept for backward compat — all render as squares */
+.carousel__slide--portrait a img,
+.carousel__slide--square a img,
+.carousel__slide--tall a img,
+.carousel__slide--wide a img { aspect-ratio: 1/1; }
 .carousel__slide a:hover img { transform: scale(1.04); }
 
 .carousel__slide-meta {
