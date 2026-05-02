@@ -148,13 +148,48 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: var(--rust-3);
 }
 .preloader__bar {
-  height: 1px; background: rgba(232,230,221,.16);
-  position: relative; overflow: hidden;
+  height: 14px;
+  background: transparent;
+  position: relative;
+  overflow: visible;
+}
+/* faint guide line behind the brush stroke (gives sense of "track") */
+.preloader__bar::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  background: rgba(232,230,221,.10);
+  transform: translateY(-50%);
 }
 .preloader__bar span {
-  position: absolute; left: 0; top: 0; height: 100%; width: 0;
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+  width: 0;
+  /* soft edges so the displacement filter has something to warp organically */
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--bone) 4%,
+    var(--bone) 94%,
+    rgba(232,230,221,.85) 99%,
+    transparent 100%);
+  /* hand-painted brush texture */
+  filter: url(#brush-stroke);
+  animation: load 1.8s cubic-bezier(.65,.05,.35,1) forwards;
+  will-change: width;
+}
+/* the wet leading edge — a subtle blob slightly ahead of the stroke */
+.preloader__bar span::after {
+  content: "";
+  position: absolute;
+  right: -4px; top: 50%;
+  width: 14px; height: 14px;
   background: var(--bone);
-  animation: load 1.4s var(--ease) forwards;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  filter: blur(2px);
+  opacity: .55;
 }
 @keyframes load { to { width: 100%; } }
 .preloader__meta {

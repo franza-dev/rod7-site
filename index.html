@@ -21,7 +21,7 @@
 <!-- PRELOADER -->
 <div class="preloader" id="preloader">
   <div class="preloader__inner">
-    <div class="preloader__row"><span>R</span><span>7</span></div>
+    <div class="preloader__row"><span>Rod</span><span>7</span></div>
     <div class="preloader__bar"><span></span></div>
     <div class="preloader__meta">
       <span>RODNEY SILVA</span>
@@ -29,6 +29,16 @@
     </div>
   </div>
 </div>
+
+<!-- SVG filter consumed by .preloader__bar to give the loading line a hand-painted, brush-like texture -->
+<svg class="brush-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="brush-stroke" x="-5%" y="-60%" width="110%" height="220%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03 1.1" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
 
 <div class="grain" aria-hidden="true"></div>
 
