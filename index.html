@@ -22,7 +22,29 @@
 <div class="preloader" id="preloader">
   <div class="preloader__inner">
     <div class="preloader__row"><span>Rod</span><span>7</span></div>
-    <div class="preloader__bar"><span></span></div>
+    <div class="preloader__bar">
+      <span></span>
+      <div class="preloader__brush" aria-hidden="true">
+        <svg viewBox="0 0 60 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- wooden handle -->
+          <rect x="26" y="2" width="8" height="46" rx="4" fill="#6b4a2b"/>
+          <rect x="27.2" y="2" width="2" height="46" rx="1" fill="#a17a4d"/>
+          <!-- ferrule (metal) -->
+          <rect x="22" y="46" width="16" height="16" fill="#b3b1a2"/>
+          <rect x="22" y="48" width="16" height="2" fill="#7c7a72"/>
+          <rect x="22" y="58" width="16" height="2" fill="#7c7a72"/>
+          <!-- bristles tapered toward tip -->
+          <path d="M21,62 L39,62 L42,108 L18,108 Z" fill="#15100a"/>
+          <!-- bristle texture lines -->
+          <line x1="26" y1="66" x2="27" y2="107" stroke="#2a2018" stroke-width=".7"/>
+          <line x1="30" y1="64" x2="30" y2="108" stroke="#080603" stroke-width=".6"/>
+          <line x1="34" y1="66" x2="33" y2="107" stroke="#2a2018" stroke-width=".7"/>
+          <!-- wet paint at the tip -->
+          <ellipse cx="30" cy="109" rx="13" ry="4" fill="#e8e6dd" opacity=".96"/>
+          <ellipse cx="30" cy="110" rx="9" ry="2" fill="#ffffff" opacity=".4"/>
+        </svg>
+      </div>
+    </div>
     <div class="preloader__meta">
       <span>RODNEY SILVA</span>
       <span>EST. 2018</span>
