@@ -1353,3 +1353,157 @@ a.contact__big:hover { color: var(--rust); }
 .tweaks-fab:hover { background: var(--rust); transform: scale(1.05); }
 .tweaks-fab svg { width: 20px; height: 20px; fill: currentColor; }
 @media print { .wa-float, .tweaks-fab { display: none !important; } }
+
+/* ============================================================
+   MOBILE TUNING (≤768px)
+   Focused responsive overrides to fix layout breaks on phones.
+============================================================ */
+@media (max-width: 768px) {
+  /* slightly looser side padding so things don't kiss the edge */
+  :root { --pad-x: clamp(18px, 6vw, 28px); }
+
+  /* HERO --------------------------------------------------- */
+  .hero__stage {
+    padding-top: 100px;
+    padding-bottom: 32px;
+    gap: 22px;
+  }
+  .hero__giant span { font-size: clamp(280px, 110vw, 600px); }
+  .hero__portrait img { max-height: 38vh; max-width: 280px; }
+  .hero__title { font-size: clamp(80px, 26vw, 160px); }
+  .hero__sub { font-size: 16px; max-width: 100%; }
+  .hero__eyebrow { font-size: 9px; letter-spacing: .26em; }
+  .hero__eyebrow::before { width: 18px; }
+  .hero__footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 16px var(--pad-x);
+  }
+  .hero__footer strong { font-size: 11px; }
+  .hero__footer > div { gap: 2px; }
+  .hero__footer > div:nth-child(3),
+  .hero__footer > div:nth-child(4) { display: none; }
+
+  /* STATEMENT ---------------------------------------------- */
+  .statement {
+    padding-top: clamp(60px, 10vh, 90px);
+    padding-bottom: clamp(60px, 10vh, 90px);
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .statement__text { font-size: clamp(20px, 5.4vw, 26px); line-height: 1.4; }
+
+  /* SECTION HEADS ------------------------------------------ */
+  .section { padding: clamp(60px, 10vh, 100px) 0; }
+  .section__head {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-bottom: 22px;
+    margin-bottom: 36px;
+  }
+  .section__num { padding-bottom: 0; }
+  .section__title { font-size: clamp(44px, 13vw, 88px); line-height: 1; }
+  .section__tag { display: none; }
+
+  /* PROSE -------------------------------------------------- */
+  .prose__lead { font-size: clamp(22px, 5.6vw, 28px); line-height: 1.3; }
+  .prose p { font-size: 15px; line-height: 1.7; }
+
+  /* BIO ---------------------------------------------------- */
+  .bio { gap: 28px; }
+  .bio__portrait::after { display: none; }
+  .bio__lead { font-size: clamp(20px, 5vw, 24px); line-height: 1.35; }
+  .bio__copy p { font-size: 15px; line-height: 1.7; }
+  .bio__facts li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 0;
+  }
+  .bio__facts span { font-size: 9px; letter-spacing: .22em; }
+  .bio__facts strong { font-size: 16px; }
+
+  /* CONCEPT FEATURE ---------------------------------------- */
+  .concept-feature__title { font-size: clamp(30px, 8vw, 44px); }
+  .concept-feature__text { font-size: 15px; line-height: 1.7; }
+  .concept-feature__media::before { width: 50px; height: 50px; inset: -10px -10px auto auto; }
+  .concept-feature__stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 18px;
+  }
+  .concept-feature__stats strong { font-size: clamp(20px, 5vw, 26px); }
+  .concept-feature__stats span { font-size: 8px; letter-spacing: .2em; }
+
+  /* CAROUSEL ----------------------------------------------- */
+  .carousel__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .carousel__head h3 { font-size: 20px; }
+  .carousel__slide { width: clamp(240px, 78vw, 320px); }
+  .carousel__slide--tall { width: clamp(220px, 68vw, 280px); }
+  .carousel__slide--wide { width: clamp(280px, 88vw, 360px); }
+  .carousel__btn { width: 38px; height: 38px; font-size: 16px; }
+
+  /* COVER -------------------------------------------------- */
+  .cover { max-height: 56svh; }
+  .cover img { max-height: 56svh; }
+  .cover__caption strong { font-size: clamp(28px, 8vw, 48px); }
+  .cover__caption span { font-size: 9px; letter-spacing: .26em; }
+
+  /* TAKI --------------------------------------------------- */
+  .section--taki::before { font-size: clamp(160px, 50vw, 320px); top: 36%; }
+  .taki__lead { font-size: clamp(20px, 5.2vw, 26px); line-height: 1.35; }
+  .taki__copy p { font-size: 15px; line-height: 1.75; }
+  .taki__motto strong { font-size: clamp(20px, 5.4vw, 28px); }
+
+  /* CONTACT ------------------------------------------------ */
+  .contact__lead { font-size: clamp(24px, 6.6vw, 36px); line-height: 1.2; margin-bottom: 32px; }
+  .contact__cta {
+    padding: 16px 26px;
+    font-size: 10px;
+    letter-spacing: .22em;
+    margin-bottom: 36px;
+  }
+  .contact__big { font-size: clamp(20px, 5.4vw, 26px); }
+  .contact__links { font-size: 18px; gap: 14px; }
+  .contact__grid { gap: 26px; padding-top: 30px; }
+
+  /* FOOTER ------------------------------------------------- */
+  .footer__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 9px;
+    letter-spacing: .22em;
+  }
+  .footer__row > span:nth-child(3) { display: none; }
+
+  /* LIGHTBOX ----------------------------------------------- */
+  .lightbox { padding: 60px 12px; }
+  .lightbox__close { top: 14px; right: 14px; width: 44px; height: 44px; font-size: 28px; }
+  .lightbox__nav { width: 44px; height: 44px; font-size: 26px; }
+  .lightbox__nav--prev { left: 10px; }
+  .lightbox__nav--next { right: 10px; }
+
+  /* WHATSAPP FLOATING ------------------------------------- */
+  .wa-float {
+    height: 52px;
+    right: 14px; bottom: 14px;
+  }
+
+  /* DRAWER (mobile menu) ----------------------------------- */
+  .drawer { width: min(86vw, 380px); padding: 18px var(--pad-x); }
+  .drawer__menu a { font-size: clamp(24px, 6.4vw, 36px); padding: 12px 0; }
+}
+
+/* very small phones (≤380px): extra tightening */
+@media (max-width: 380px) {
+  :root { --pad-x: 16px; }
+  .hero__title { font-size: clamp(70px, 24vw, 120px); }
+  .section__title { font-size: clamp(38px, 12vw, 64px); }
+  .concept-feature__stats { grid-template-columns: 1fr 1fr; }
+  .concept-feature__stats div:last-child { grid-column: 1 / -1; }
+}
