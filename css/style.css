@@ -372,7 +372,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .drawer__mark {
   font-family: var(--display); font-weight: 400; font-style: italic; font-size: 26px;
 }
-.drawer__mark::after { content: "."; color: var(--rust-3); font-style: normal; }
+.drawer__mark em {
+  font-style: italic;
+  color: var(--rust-3);
+}
 .drawer__close {
   font-family: var(--display); font-size: 36px; line-height: 1; font-weight: 300;
 }
