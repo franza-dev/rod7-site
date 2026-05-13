@@ -1388,7 +1388,10 @@ a.contact__big:hover { color: var(--rust); }
   color: var(--ink);
 }
 [data-theme="dark"] .footer__mark { color: var(--bone); }
-.footer__mark::after { content: "."; color: var(--rust); font-style: normal; }
+.footer__mark em {
+  font-style: italic;
+  color: var(--rust);
+}
 
 /* ============================================================
    LIGHTBOX
