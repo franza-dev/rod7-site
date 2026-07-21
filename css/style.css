@@ -344,38 +344,33 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: var(--bone);
 }
 
-/* language switcher (PT / EN) */
+/* language switcher (PT / EN) — texto puro, sem moldura */
 .lang {
-  display: inline-flex; align-items: center; gap: 2px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  padding: 3px;
-  opacity: .6;
-  transition: opacity .3s var(--ease), border-color .3s var(--ease);
+  display: inline-flex; align-items: center; gap: 8px;
+  /* respiro extra à esquerda para destacá-lo do CTA */
+  margin-left: clamp(8px, 1.6vw, 22px);
 }
-.lang:hover, .lang:focus-within { opacity: 1; }
 .lang__sep {
-  width: 1px; height: 12px;
+  width: 1px; height: 10px;
   background: currentColor;
-  opacity: .3;
+  opacity: .25;
 }
 .lang__btn {
   font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: .18em;
+  font-size: 10px;
+  letter-spacing: .24em;
   line-height: 1;
-  padding: 7px 9px;
-  border-radius: 999px;
+  padding: 4px 0;
   color: inherit;
-  transition: background .3s var(--ease), color .3s var(--ease);
+  opacity: .45;
+  transition: opacity .3s var(--ease), color .3s var(--ease);
 }
-.lang__btn:hover { color: var(--rust-3); }
+.lang__btn:hover { opacity: 1; }
 .lang__btn.is-active {
-  background: var(--rust);
-  color: var(--bone);
+  opacity: 1;
+  color: var(--rust-3);
 }
-.lang__btn.is-active:hover { color: var(--bone); }
-.lang--drawer { opacity: 1; }
+.lang--drawer { margin-left: 0; }
 
 .nav__toggle {
   display: inline-flex; flex-direction: column; gap: 5px;
