@@ -20,6 +20,7 @@
 <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:site_name" content="ROD7 · Rodney Silva">
 <meta property="og:title" content="Rodney Silva (ROD7) — Quadros Personalizados e Arte Corporativa Sustentável">
 <meta property="og:description" content="Artista visual brasileiro. Quadros personalizados sob encomenda, murais artísticos e arte corporativa sustentável com resíduos de MDF.">
@@ -147,23 +148,28 @@
 
 <!-- NAV -->
 <header class="nav" id="nav">
-  <a href="#top" class="nav__brand" aria-label="Rod7 — Início">
+  <a href="#top" class="nav__brand" aria-label="Rod7 — Início" data-i18n-aria="nav.brand.aria">
     <span class="nav__brand-mark">Rod<em>7</em></span>
   </a>
 
-  <nav class="nav__menu" aria-label="Seções" data-cursor="hover">
-    <a href="#bio" title="Biografia do artista visual Rodney Silva — ROD7"><span>Bio</span><em>01</em></a>
-    <a href="#concept" title="Concept — Arte Corporativa Sustentável"><span>Concept</span><em>02</em></a>
-    <a href="#historias" title="Histórias — Quadros Personalizados sob Encomenda"><span>Histórias</span><em>03</em></a>
-    <a href="#mural" title="Mural — Pintura Mural Artística"><span>Mural</span><em>04</em></a>
-    <a href="#abstrato" title="Abstrato — Quadros Abstratos Originais"><span>Abstrato</span><em>05</em></a>
-    <a href="#escultura" title="Escultura — Obras Tridimensionais"><span>Escultura</span><em>06</em></a>
-    <a href="#taki" title="Taki pelo Mundo — Personagem Autoral de Rod7"><span>Taki</span><em>07</em></a>
+  <nav class="nav__menu" aria-label="Seções" data-i18n-aria="nav.menu.aria" data-cursor="hover">
+    <a href="#bio" title="Biografia do artista visual Rodney Silva — ROD7" data-i18n-title="nav.bio.title"><span data-i18n="nav.bio">Bio</span><em>01</em></a>
+    <a href="#concept" title="Concept — Arte Corporativa Sustentável" data-i18n-title="nav.concept.title"><span data-i18n="nav.concept">Concept</span><em>02</em></a>
+    <a href="#historias" title="Histórias — Quadros Personalizados sob Encomenda" data-i18n-title="nav.historias.title"><span data-i18n="nav.historias">Histórias</span><em>03</em></a>
+    <a href="#mural" title="Mural — Pintura Mural Artística" data-i18n-title="nav.mural.title"><span data-i18n="nav.mural">Mural</span><em>04</em></a>
+    <a href="#abstrato" title="Abstrato — Quadros Abstratos Originais" data-i18n-title="nav.abstrato.title"><span data-i18n="nav.abstrato">Abstrato</span><em>05</em></a>
+    <a href="#escultura" title="Escultura — Obras Tridimensionais" data-i18n-title="nav.escultura.title"><span data-i18n="nav.escultura">Escultura</span><em>06</em></a>
+    <a href="#taki" title="Taki pelo Mundo — Personagem Autoral de Rod7" data-i18n-title="nav.taki.title"><span data-i18n="nav.taki">Taki</span><em>07</em></a>
   </nav>
 
   <div class="nav__right">
-    <a href="#contato" class="nav__cta">Contato</a>
-    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <div class="lang" role="group" aria-label="Idioma" data-i18n-aria="lang.aria">
+      <button type="button" class="lang__btn" data-lang="pt" aria-pressed="true" lang="pt-BR">PT</button>
+      <span class="lang__sep" aria-hidden="true"></span>
+      <button type="button" class="lang__btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <a href="#contato" class="nav__cta" data-i18n="nav.cta">Contato</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" data-i18n-aria="nav.toggle.aria" aria-expanded="false">
       <span></span><span></span>
     </button>
   </div>
@@ -172,19 +178,26 @@
 <aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer__head">
     <span class="drawer__mark">Rod<em>7</em></span>
-    <button class="drawer__close" id="drawerClose" aria-label="Fechar menu">×</button>
+    <button class="drawer__close" id="drawerClose" aria-label="Fechar menu" data-i18n-aria="drawer.close.aria">×</button>
   </div>
   <nav class="drawer__menu">
-    <a href="#bio"><em>01</em> Biografia</a>
-    <a href="#concept"><em>02</em> Concept</a>
-    <a href="#historias"><em>03</em> Histórias</a>
-    <a href="#mural"><em>04</em> Mural</a>
-    <a href="#abstrato"><em>05</em> Abstrato</a>
-    <a href="#escultura"><em>06</em> Escultura</a>
-    <a href="#taki"><em>07</em> Taki pelo Mundo</a>
-    <a href="#contato"><em>08</em> Contato</a>
+    <a href="#bio"><em>01</em> <span data-i18n="drawer.bio">Biografia</span></a>
+    <a href="#concept"><em>02</em> <span data-i18n="drawer.concept">Concept</span></a>
+    <a href="#historias"><em>03</em> <span data-i18n="drawer.historias">Histórias</span></a>
+    <a href="#mural"><em>04</em> <span data-i18n="drawer.mural">Mural</span></a>
+    <a href="#abstrato"><em>05</em> <span data-i18n="drawer.abstrato">Abstrato</span></a>
+    <a href="#escultura"><em>06</em> <span data-i18n="drawer.escultura">Escultura</span></a>
+    <a href="#taki"><em>07</em> <span data-i18n="drawer.taki">Taki pelo Mundo</span></a>
+    <a href="#contato"><em>08</em> <span data-i18n="drawer.contato">Contato</span></a>
   </nav>
-  <div class="drawer__foot">SÃO PAULO · TORONTO · MIAMI</div>
+  <div class="drawer__foot">
+    <div class="lang lang--drawer" role="group" aria-label="Idioma" data-i18n-aria="lang.aria">
+      <button type="button" class="lang__btn" data-lang="pt" aria-pressed="true" lang="pt-BR">PT</button>
+      <span class="lang__sep" aria-hidden="true"></span>
+      <button type="button" class="lang__btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <span>SÃO PAULO · TORONTO · MIAMI</span>
+  </div>
 </aside>
 
 <!-- HERO -->
@@ -193,25 +206,25 @@
     <div class="hero__giant" aria-hidden="true"><span>R</span></div>
 
     <figure class="hero__portrait">
-      <img src="images/bio/rodney-hero.jpg?v=2" alt="Retrato em preto e branco do artista plástico Rodney Silva (ROD7) com paletó listrado contra parede de madeira ripada — artista brasileiro contemporâneo" loading="eager">
+      <img src="images/bio/rodney-hero.jpg?v=2" alt="Retrato em preto e branco do artista plástico Rodney Silva (ROD7) com paletó listrado contra parede de madeira ripada — artista brasileiro contemporâneo" data-i18n-alt="alt.hero" loading="eager">
     </figure>
 
     <div class="hero__title-wrap">
-      <span class="hero__eyebrow scramble" data-text="ARTISTA PLÁSTICO · BR">ARTISTA PLÁSTICO · BR</span>
+      <span class="hero__eyebrow scramble" data-text="ARTISTA PLÁSTICO · BR" data-i18n="hero.eyebrow">ARTISTA PLÁSTICO · BR</span>
       <h1 class="hero__title">
         <span class="scramble" data-text="ROD" aria-hidden="true">ROD</span><span class="hero__title-7" aria-hidden="true"><em>7</em></span>
-        <span class="sr-only">Rodney Silva (ROD7) — Artista Plástico: arte sob medida, quadros personalizados, murais artísticos e arte corporativa sustentável.</span>
+        <span class="sr-only" data-i18n="hero.sr">Rodney Silva (ROD7) — Artista Plástico: arte sob medida, quadros personalizados, murais artísticos e arte corporativa sustentável.</span>
       </h1>
-      <p class="hero__slogan"><em>Arte sob medida.</em></p>
-      <p class="hero__sub">Há mais de duas décadas transitando entre publicidade, moda e arte — hoje o estúdio é o seu único endereço.</p>
+      <p class="hero__slogan" data-i18n="hero.slogan"><em>Arte sob medida.</em></p>
+      <p class="hero__sub" data-i18n="hero.sub">Há mais de duas décadas transitando entre publicidade, moda e arte — hoje o estúdio é o seu único endereço.</p>
     </div>
   </div>
 
   <div class="hero__footer">
-    <div><span>Estabelecido</span><strong>2018</strong></div>
-    <div><span>Direção</span><strong>BR · CA · US</strong></div>
-    <div><span>Lema</span><strong>Viver o presente</strong></div>
-    <div><span class="hero__scroll">Scroll</span></div>
+    <div><span data-i18n="hero.f1">Estabelecido</span><strong>2018</strong></div>
+    <div><span data-i18n="hero.f2">Direção</span><strong>BR · CA · US</strong></div>
+    <div><span data-i18n="hero.f3">Lema</span><strong data-i18n="hero.f3v">Viver o presente</strong></div>
+    <div><span class="hero__scroll" data-i18n="hero.scroll">Scroll</span></div>
   </div>
 </section>
 
@@ -219,9 +232,9 @@
 <section class="statement" id="statement">
   <div class="statement__index">
     <span>— I.</span>
-    <span>STATEMENT</span>
+    <span data-i18n="statement.label">STATEMENT</span>
   </div>
-  <p class="statement__text reveal">
+  <p class="statement__text reveal" data-i18n="statement.text">
     Há mais de vinte anos transitando entre <em>publicidade</em>, <em>moda</em> e <em>arte</em>,
     Rodney decidiu escutar a única voz que nunca deixou de chamar.
     Vendeu sua agência, abraçou a tinta e fez do estúdio o seu novo endereço.
@@ -232,48 +245,48 @@
 </section>
 
 <!-- BIO (01) -->
-<section class="section section--light" id="bio" aria-label="Biografia do artista visual Rodney Silva — ROD7, artista plástico brasileiro autodidata">
+<section class="section section--light" id="bio" aria-label="Biografia do artista visual Rodney Silva — ROD7, artista plástico brasileiro autodidata" data-i18n-aria="bio.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">01</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Biografia</span>
-        <span class="sr-only">Biografia do artista visual Rodney Silva — ROD7, artista plástico brasileiro autodidata.</span>
+        <span aria-hidden="true" data-i18n="bio.title">Biografia</span>
+        <span class="sr-only" data-i18n="bio.sr">Biografia do artista visual Rodney Silva — ROD7, artista plástico brasileiro autodidata.</span>
       </h2>
-      <span class="section__tag">— RODNEY SILVA</span>
+      <span class="section__tag" data-i18n="bio.tag">— RODNEY SILVA</span>
     </header>
 
     <div class="bio">
       <figure class="bio__portrait reveal">
-        <img src="images/bio/rod-4.jpeg" alt="Retrato do artista plástico Rodney Silva (ROD7) em seu estúdio — artista brasileiro autodidata com trajetória de duas décadas entre publicidade, marketing e arte">
-        <figcaption>Rodney Silva · estúdio</figcaption>
+        <img src="images/bio/rod-4.jpeg" alt="Retrato do artista plástico Rodney Silva (ROD7) em seu estúdio — artista brasileiro autodidata com trajetória de duas décadas entre publicidade, marketing e arte" data-i18n-alt="alt.bio">
+        <figcaption data-i18n="bio.caption">Rodney Silva · estúdio</figcaption>
       </figure>
 
       <div class="bio__copy reveal delay-1">
-        <p class="bio__lead">
+        <p class="bio__lead" data-i18n="bio.p1">
           Inspirado por Deus e influenciado pelos lugares por onde passou,
           Rodney Silva construiu uma trajetória de mais de duas décadas entre
           <em>publicidade</em>, <em>marketing</em>, <em>eventos</em> e <em>moda</em>.
         </p>
-        <p>
+        <p data-i18n="bio.p2">
           Desde a adolescência, desenvolveu uma relação silenciosa e profunda com a arte.
           Seu primeiro contato criativo aconteceu em uma marcenaria, onde aprendeu a enxergar
           nos retalhos de madeira não resíduos, mas <em>matéria-prima carregada de história
           e possibilidades</em> — essência que mais tarde se tornaria assinatura de sua obra.
         </p>
-        <p>
+        <p data-i18n="bio.p3">
           Formado em Publicidade e Marketing, dirigiu sua própria agência por mais de dez anos.
           Em uma <em>decisão transformadora</em>, escolheu deixar o mercado corporativo para
           dedicar-se integralmente à arte, que desde 2018 se tornou sua principal expressão
           de vida.
         </p>
-        <p>
+        <p data-i18n="bio.p4">
           Com uma trajetória construída de forma <em>autodidata</em>, suas obras hoje seguem
           para diferentes países, levando consigo histórias, memórias e identidade. Embora
           seu trabalho tenha alcançado o cenário internacional, seus principais focos de atuação
           estão em <em>São Paulo</em> e no <em>Rio de Janeiro</em>.
         </p>
-        <p>
+        <p data-i18n="bio.p5">
           Já apresentou trabalhos em <em>Miami</em>, <em>Califórnia</em> e <em>Toronto</em>,
           além de participar de exposições em galerias canadenses, consolidando uma linguagem
           artística contemporânea marcada pela autenticidade, pela matéria e pela conexão humana.
@@ -285,25 +298,25 @@
 </section>
 
 <!-- CONCEPT (02) — featured -->
-<section class="section section--concept" id="concept" aria-label="Concept — Arte Corporativa Sustentável com Resíduos de MDF, quadros personalizados com logo da empresa">
+<section class="section section--concept" id="concept" aria-label="Concept — Arte Corporativa Sustentável com Resíduos de MDF, quadros personalizados com logo da empresa" data-i18n-aria="concept.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">02</span>
       <h2 class="section__title">
         <span aria-hidden="true">Concept</span>
-        <span class="sr-only">Concept — Arte Corporativa Sustentável: quadros personalizados com logo da empresa feitos com resíduos de MDF.</span>
+        <span class="sr-only" data-i18n="concept.sr">Concept — Arte Corporativa Sustentável: quadros personalizados com logo da empresa feitos com resíduos de MDF.</span>
       </h2>
-      <span class="section__tag">— ARTE CORPORATIVA SUSTENTÁVEL</span>
+      <span class="section__tag" data-i18n="concept.tag">— ARTE CORPORATIVA SUSTENTÁVEL</span>
     </header>
 
     <div class="concept-feature">
       <figure class="concept-feature__media reveal" data-cursor="zoom">
-        <img src="images/concept/concept-1.jpeg" alt="Quadro corporativo sustentável com letras e símbolos de MDF reciclado e respingos laranjas — obra Concept de Rodney Silva">
+        <img src="images/concept/concept-1.jpeg" alt="Quadro corporativo sustentável com letras e símbolos de MDF reciclado e respingos laranjas — obra Concept de Rodney Silva" data-i18n-alt="alt.concept.feature">
       </figure>
       <div class="concept-feature__copy reveal delay-1">
-        <span class="concept-feature__pill"><span></span> SÉRIE CARRO-CHEFE</span>
-        <h3 class="concept-feature__title">A marca como manifesto. O resíduo como matéria.</h3>
-        <p class="concept-feature__text">
+        <span class="concept-feature__pill"><span></span> <span data-i18n="concept.pill">SÉRIE CARRO-CHEFE</span></span>
+        <h3 class="concept-feature__title" data-i18n="concept.title">A marca como manifesto. O resíduo como matéria.</h3>
+        <p class="concept-feature__text" data-i18n="concept.text">
           Concept transforma resíduos de MDF em quadros únicos que vestem símbolos
           e logotipos corporativos com uma pele inédita. Cada obra é uma tradução:
           o que iria para o lixo vira matéria de marca, e a marca ganha
@@ -311,9 +324,9 @@
           entendem que <em>estética</em> e <em>responsabilidade</em> caminham juntas.
         </p>
         <div class="concept-feature__stats">
-          <div><strong>100%</strong><span>Resíduo MDF</span></div>
-          <div><strong>1/1</strong><span>Edição única</span></div>
-          <div><strong>+40</strong><span>Encomendas</span></div>
+          <div><strong>100%</strong><span data-i18n="concept.stat1">Resíduo MDF</span></div>
+          <div><strong>1/1</strong><span data-i18n="concept.stat2">Edição única</span></div>
+          <div><strong>+40</strong><span data-i18n="concept.stat3">Encomendas</span></div>
         </div>
       </div>
     </div>
@@ -322,26 +335,26 @@
   <!-- DRAG carousel -->
   <div class="carousel reveal" data-carousel>
     <div class="carousel__head">
-      <h3>Acervo Concept</h3>
+      <h3 data-i18n="concept.carousel">Acervo Concept</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 08</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide carousel__slide--wide"><a data-img="images/concept/concept-1.jpeg" data-cursor="zoom"><img src="images/concept/concept-1.jpeg" alt="Quadro corporativo sustentável com símbolos de MDF reciclado em laranja — obra Concept 01 de ROD7" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 01</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-2.jpeg" data-cursor="zoom"><img src="images/concept/concept-2.jpeg" alt="Arte corporativa personalizada com logo de empresa em quadro sustentável de MDF — Concept 02 ROD7" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 02</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-3.jpeg" data-cursor="zoom"><img src="images/concept/concept-3.jpeg" alt="Quadro com logotipo de empresa integrado a composição urbana em MDF reciclado — obra Concept 03" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 03</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/concept/concept-4.jpeg" data-cursor="zoom"><img src="images/concept/concept-4.jpeg" alt="Quadro decorativo corporativo com logo personalizado — arte sustentável Rod7 série Concept 04" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 04</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-5.jpeg" data-cursor="zoom"><img src="images/concept/concept-5.jpeg" alt="Quadro corporativo personalizado com logo em fundo de MDF claro e detalhes dourados — Concept 05" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 05</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-6.jpeg" data-cursor="zoom"><img src="images/concept/concept-6.jpeg" alt="Obra Concept 06 com logo de empresa integrado a paisagem urbana sustentável de MDF reciclado" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 06</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-7.jpeg" data-cursor="zoom"><img src="images/concept/concept-7.jpeg" alt="Quadro corporativo sustentável com logotipo personalizado — obra Concept 07 da série de arte corporativa" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 07</strong><span>MDF · 2024</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/concept/concept-8.jpeg" data-cursor="zoom"><img src="images/concept/concept-8.jpeg" alt="Arte corporativa personalizada com resíduos de MDF reciclado — obra Concept 08 de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 08</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--wide"><a data-img="images/concept/concept-1.jpeg" data-cursor="zoom"><img src="images/concept/concept-1.jpeg" alt="Quadro corporativo sustentável com símbolos de MDF reciclado em laranja — obra Concept 01 de ROD7" data-i18n-alt="alt.concept.1" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 01</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-2.jpeg" data-cursor="zoom"><img src="images/concept/concept-2.jpeg" alt="Arte corporativa personalizada com logo de empresa em quadro sustentável de MDF — Concept 02 ROD7" data-i18n-alt="alt.concept.2" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 02</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-3.jpeg" data-cursor="zoom"><img src="images/concept/concept-3.jpeg" alt="Quadro com logotipo de empresa integrado a composição urbana em MDF reciclado — obra Concept 03" data-i18n-alt="alt.concept.3" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 03</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/concept/concept-4.jpeg" data-cursor="zoom"><img src="images/concept/concept-4.jpeg" alt="Quadro decorativo corporativo com logo personalizado — arte sustentável Rod7 série Concept 04" data-i18n-alt="alt.concept.4" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 04</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-5.jpeg" data-cursor="zoom"><img src="images/concept/concept-5.jpeg" alt="Quadro corporativo personalizado com logo em fundo de MDF claro e detalhes dourados — Concept 05" data-i18n-alt="alt.concept.5" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 05</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-6.jpeg" data-cursor="zoom"><img src="images/concept/concept-6.jpeg" alt="Obra Concept 06 com logo de empresa integrado a paisagem urbana sustentável de MDF reciclado" data-i18n-alt="alt.concept.6" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 06</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-7.jpeg" data-cursor="zoom"><img src="images/concept/concept-7.jpeg" alt="Quadro corporativo sustentável com logotipo personalizado — obra Concept 07 da série de arte corporativa" data-i18n-alt="alt.concept.7" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 07</strong><span>MDF · 2024</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/concept/concept-8.jpeg" data-cursor="zoom"><img src="images/concept/concept-8.jpeg" alt="Arte corporativa personalizada com resíduos de MDF reciclado — obra Concept 08 de Rodney Silva" data-i18n-alt="alt.concept.8" loading="lazy"><div class="carousel__slide-meta"><strong>Concept · 08</strong><span>MDF · 2024</span></div></a></div>
       </div>
     </div>
   </div>
@@ -350,22 +363,22 @@
 </section>
 
 <!-- HISTORIAS (03) -->
-<section class="section section--light" id="historias" aria-label="Histórias — Quadros Personalizados sob Encomenda, presente exclusivo e original">
+<section class="section section--light" id="historias" aria-label="Histórias — Quadros Personalizados sob Encomenda, presente exclusivo e original" data-i18n-aria="historias.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">03</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Histórias</span>
-        <span class="sr-only">Histórias — Quadros personalizados sob encomenda que retratam a história do cliente. Presente exclusivo e original.</span>
+        <span aria-hidden="true" data-i18n="historias.title">Histórias</span>
+        <span class="sr-only" data-i18n="historias.sr">Histórias — Quadros personalizados sob encomenda que retratam a história do cliente. Presente exclusivo e original.</span>
       </h2>
-      <span class="section__tag">— RETRATOS NARRATIVOS</span>
+      <span class="section__tag" data-i18n="historias.tag">— RETRATOS NARRATIVOS</span>
     </header>
 
     <div class="prose reveal">
-      <p class="prose__lead">
+      <p class="prose__lead" data-i18n="historias.lead">
         A vida de cada cliente vira matéria-prima.
       </p>
-      <p>
+      <p data-i18n="historias.p1">
         Em <em>Histórias</em>, Rod7 escuta — escuta de verdade — e devolve um quadro que carrega
         um capítulo inteiro de quem encomendou. Datas, lugares, símbolos íntimos, encontros e
         travessias se sobrepõem em camadas de cor e textura, num retrato narrativo que só faz
@@ -377,54 +390,54 @@
 
   <div class="carousel reveal" data-carousel>
     <div class="carousel__head">
-      <h3>Acervo Histórias</h3>
+      <h3 data-i18n="historias.carousel">Acervo Histórias</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 06</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-1.jpeg" data-cursor="zoom"><img src="images/historias/historias-1.jpeg" alt="Quadro personalizado em tons azuis com simbologia da história do cliente — série Histórias de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 01</strong><span>Encomenda · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-2.jpeg" data-cursor="zoom"><img src="images/historias/historias-2.jpeg" alt="Quadro narrativo personalizado retratando a vida do cliente em camadas de cor — Histórias 02 ROD7" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 02</strong><span>Encomenda · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-3.jpeg" data-cursor="zoom"><img src="images/historias/historias-3.jpeg" alt="Obra personalizada sob encomenda contando a trajetória do cliente — série Histórias 03" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 03</strong><span>Encomenda · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-4.jpeg" data-cursor="zoom"><img src="images/historias/historias-4.jpeg" alt="Quadro autobiográfico personalizado com elementos da história pessoal — presente exclusivo Histórias 04" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 04</strong><span>Encomenda · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-5.jpeg" data-cursor="zoom"><img src="images/historias/historias-5.jpeg" alt="Pintura personalizada sob encomenda com simbologia familiar — quadro narrativo Histórias 05 de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 05</strong><span>Encomenda · 2024</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-6.jpeg" data-cursor="zoom"><img src="images/historias/historias-6.jpeg" alt="Quadro personalizado contando a história da família do cliente — obra Histórias 06 de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Histórias · 06</strong><span>Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-1.jpeg" data-cursor="zoom"><img src="images/historias/historias-1.jpeg" alt="Quadro personalizado em tons azuis com simbologia da história do cliente — série Histórias de Rodney Silva" data-i18n-alt="alt.historias.1" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 01</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-2.jpeg" data-cursor="zoom"><img src="images/historias/historias-2.jpeg" alt="Quadro narrativo personalizado retratando a vida do cliente em camadas de cor — Histórias 02 ROD7" data-i18n-alt="alt.historias.2" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 02</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-3.jpeg" data-cursor="zoom"><img src="images/historias/historias-3.jpeg" alt="Obra personalizada sob encomenda contando a trajetória do cliente — série Histórias 03" data-i18n-alt="alt.historias.3" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 03</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-4.jpeg" data-cursor="zoom"><img src="images/historias/historias-4.jpeg" alt="Quadro autobiográfico personalizado com elementos da história pessoal — presente exclusivo Histórias 04" data-i18n-alt="alt.historias.4" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 04</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-5.jpeg" data-cursor="zoom"><img src="images/historias/historias-5.jpeg" alt="Pintura personalizada sob encomenda com simbologia familiar — quadro narrativo Histórias 05 de Rod7" data-i18n-alt="alt.historias.5" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 05</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/historias/historias-6.jpeg" data-cursor="zoom"><img src="images/historias/historias-6.jpeg" alt="Quadro personalizado contando a história da família do cliente — obra Histórias 06 de Rodney Silva" data-i18n-alt="alt.historias.6" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="historias.slide">Histórias</span> · 06</strong><span data-i18n="historias.meta">Encomenda · 2024</span></div></a></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- MURAL (04) -->
-<section class="section section--dark" id="mural" aria-label="Mural — Pintura Mural Artística em Paredes, Fachadas e Portas; muralista para empresas e residências">
+<section class="section section--dark" id="mural" aria-label="Mural — Pintura Mural Artística em Paredes, Fachadas e Portas; muralista para empresas e residências" data-i18n-aria="mural.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">04</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Mural</span>
-        <span class="sr-only">Mural — Pintura mural artística em paredes, fachadas e portas. Muralista para empresas e residências.</span>
+        <span aria-hidden="true" data-i18n="mural.title">Mural</span>
+        <span class="sr-only" data-i18n="mural.sr">Mural — Pintura mural artística em paredes, fachadas e portas. Muralista para empresas e residências.</span>
       </h2>
-      <span class="section__tag">— ARQUITETURA COMO TELA</span>
+      <span class="section__tag" data-i18n="mural.tag">— ARQUITETURA COMO TELA</span>
     </header>
   </div>
 
   <div class="section__container">
     <div class="cover reveal">
-      <img src="images/mural/mural-1.jpeg" alt="Mural artístico em arco-íris pintado em parede curva — muralista Rodney Silva, pintura mural decorativa" loading="lazy" data-parallax="0.06">
+      <img src="images/mural/mural-1.jpeg" alt="Mural artístico em arco-íris pintado em parede curva — muralista Rodney Silva, pintura mural decorativa" data-i18n-alt="alt.mural.cover" loading="lazy" data-parallax="0.06">
       <div class="cover__caption">
-        <span>EM ESCALA</span>
-        <strong>Quando a tela é uma fachada inteira.</strong>
+        <span data-i18n="mural.cover.eyebrow">EM ESCALA</span>
+        <strong data-i18n="mural.cover.title">Quando a tela é uma fachada inteira.</strong>
       </div>
     </div>
 
     <div class="prose reveal">
-      <p class="prose__lead">Quando a tela é uma porta, uma fachada, uma parede inteira.</p>
-      <p>
+      <p class="prose__lead" data-i18n="mural.lead">Quando a tela é uma porta, uma fachada, uma parede inteira.</p>
+      <p data-i18n="mural.p1">
         Os Murais expandem o gesto do quadro para a escala da arquitetura, transformando espaços
         comuns em paisagens. Trabalhos urbanos, residenciais e institucionais que assumem o lugar
         como obra — e o cotidiano como público. Pintar uma parede, para Rod7, é menos
@@ -435,47 +448,47 @@
 
   <div class="carousel reveal" data-carousel>
     <div class="carousel__head">
-      <h3>Acervo Mural</h3>
+      <h3 data-i18n="mural.carousel">Acervo Mural</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 07</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide carousel__slide--wide"><a data-img="images/mural/mural-2.jpeg" data-cursor="zoom"><img src="images/mural/mural-2.jpeg" alt="Mural decorativo colorido com elementos florais e geométricos para fachada externa — pintura mural artística Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 02</strong><span>Externo</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural-3.jpeg" data-cursor="zoom"><img src="images/mural/mural-3.jpeg" alt="Mural artístico residencial com personagens autorais — pintura mural ROD7 em ambiente interno" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 03</strong><span>Residencial</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural-4.jpeg" data-cursor="zoom"><img src="images/mural/mural-4.jpeg" alt="Mural decorativo institucional em ambiente comercial — pintura mural artística para empresa de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 04</strong><span>Institucional</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural-5.jpeg" data-cursor="zoom"><img src="images/mural/mural-5.jpeg" alt="Pintura mural urbana em fachada externa — muralista Rodney Silva, arte em parede comercial" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 05</strong><span>Urbano</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural-7.jpeg" data-cursor="zoom"><img src="images/mural/mural-7.jpeg" alt="Mural colorido em ambiente residencial — pintura mural artística personalizada de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 07</strong><span>Residencial</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural-8.jpeg" data-cursor="zoom"><img src="images/mural/mural-8.jpeg" alt="Detalhe de pintura mural em porta — arte urbana personalizada Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 08</strong><span>Detalhe</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/mural/mural.jpeg" data-cursor="zoom"><img src="images/mural/mural.jpeg" alt="Detalhe de mural artístico em parede de ambiente comercial — muralista ROD7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 09</strong><span>Detalhe</span></div></a></div>
+        <div class="carousel__slide carousel__slide--wide"><a data-img="images/mural/mural-2.jpeg" data-cursor="zoom"><img src="images/mural/mural-2.jpeg" alt="Mural decorativo colorido com elementos florais e geométricos para fachada externa — pintura mural artística Rod7" data-i18n-alt="alt.mural.2" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 02</strong><span data-i18n="mural.m1">Externo</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-3.jpeg" data-cursor="zoom"><img src="images/mural/mural-3.jpeg" alt="Mural artístico residencial com personagens autorais — pintura mural ROD7 em ambiente interno" data-i18n-alt="alt.mural.3" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 03</strong><span data-i18n="mural.m2">Residencial</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-4.jpeg" data-cursor="zoom"><img src="images/mural/mural-4.jpeg" alt="Mural decorativo institucional em ambiente comercial — pintura mural artística para empresa de Rod7" data-i18n-alt="alt.mural.4" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 04</strong><span data-i18n="mural.m3">Institucional</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-5.jpeg" data-cursor="zoom"><img src="images/mural/mural-5.jpeg" alt="Pintura mural urbana em fachada externa — muralista Rodney Silva, arte em parede comercial" data-i18n-alt="alt.mural.5" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 05</strong><span data-i18n="mural.m4">Urbano</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-7.jpeg" data-cursor="zoom"><img src="images/mural/mural-7.jpeg" alt="Mural colorido em ambiente residencial — pintura mural artística personalizada de Rod7" data-i18n-alt="alt.mural.7" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 07</strong><span data-i18n="mural.m2">Residencial</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural-8.jpeg" data-cursor="zoom"><img src="images/mural/mural-8.jpeg" alt="Detalhe de pintura mural em porta — arte urbana personalizada Rod7" data-i18n-alt="alt.mural.8" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 08</strong><span data-i18n="mural.m5">Detalhe</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/mural/mural.jpeg" data-cursor="zoom"><img src="images/mural/mural.jpeg" alt="Detalhe de mural artístico em parede de ambiente comercial — muralista ROD7" data-i18n-alt="alt.mural.9" loading="lazy"><div class="carousel__slide-meta"><strong>Mural · 09</strong><span data-i18n="mural.m5">Detalhe</span></div></a></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ABSTRATO (05) -->
-<section class="section section--light" id="abstrato" aria-label="Abstrato — Quadros Abstratos Originais e pintura abstrata contemporânea para sala e escritório">
+<section class="section section--light" id="abstrato" aria-label="Abstrato — Quadros Abstratos Originais e pintura abstrata contemporânea para sala e escritório" data-i18n-aria="abstrato.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">05</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Abstrato</span>
-        <span class="sr-only">Abstrato — Quadros abstratos originais e pinturas abstratas contemporâneas para sala e escritório.</span>
+        <span aria-hidden="true" data-i18n="abstrato.title">Abstrato</span>
+        <span class="sr-only" data-i18n="abstrato.sr">Abstrato — Quadros abstratos originais e pinturas abstratas contemporâneas para sala e escritório.</span>
       </h2>
-      <span class="section__tag">— GESTO LIVRE</span>
+      <span class="section__tag" data-i18n="abstrato.tag">— GESTO LIVRE</span>
     </header>
 
     <div class="prose reveal">
-      <p class="prose__lead">
+      <p class="prose__lead" data-i18n="abstrato.lead">
         Sem moldura narrativa. Aqui, a obra responde primeiro ao gesto e à matéria.
       </p>
-      <p>
+      <p data-i18n="abstrato.p1">
         O Abstrato é onde Rod7 se permite o salto: cor crua, sobreposição, contraste, deriva.
         São pinturas que pedem para serem <em>sentidas</em> antes de lidas — território livre,
         onde o silêncio do branco encontra o ruído do pigmento.
@@ -485,46 +498,46 @@
 
   <div class="carousel reveal" data-carousel>
     <div class="carousel__head">
-      <h3>Acervo Abstrato</h3>
+      <h3 data-i18n="abstrato.carousel">Acervo Abstrato</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 06</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/abstrato/abstrato.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato.jpeg" alt="Quadro abstrato grande contemporâneo com panda e elementos coloridos — obra abstrata original de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 00</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-1.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-1.jpeg" alt="Pintura abstrata original em tons azuis e amarelos — obra abstrata contemporânea de ROD7" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 01</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-2.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-2.jpeg" alt="Quadro abstrato contemporâneo com camadas de cor e textura — arte abstrata original Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 02</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-3.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-3.jpeg" alt="Obra abstrata original em telas verticais — pintura abstrata contemporânea de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 03</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-4.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-4.jpeg" alt="Quadro abstrato grande para sala — arte abstrata contemporânea colorida de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 04</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-5.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-5.jpeg" alt="Pintura abstrata colorida original — obra abstrata contemporânea de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Abstrato · 05</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/abstrato/abstrato.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato.jpeg" alt="Quadro abstrato grande contemporâneo com panda e elementos coloridos — obra abstrata original de Rodney Silva" data-i18n-alt="alt.abstrato.0" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 00</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-1.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-1.jpeg" alt="Pintura abstrata original em tons azuis e amarelos — obra abstrata contemporânea de ROD7" data-i18n-alt="alt.abstrato.1" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 01</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-2.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-2.jpeg" alt="Quadro abstrato contemporâneo com camadas de cor e textura — arte abstrata original Rod7" data-i18n-alt="alt.abstrato.2" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 02</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-3.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-3.jpeg" alt="Obra abstrata original em telas verticais — pintura abstrata contemporânea de Rodney Silva" data-i18n-alt="alt.abstrato.3" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 03</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-4.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-4.jpeg" alt="Quadro abstrato grande para sala — arte abstrata contemporânea colorida de Rod7" data-i18n-alt="alt.abstrato.4" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 04</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/abstrato/abstrato-5.jpeg" data-cursor="zoom"><img src="images/abstrato/abstrato-5.jpeg" alt="Pintura abstrata colorida original — obra abstrata contemporânea de Rodney Silva" data-i18n-alt="alt.abstrato.5" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="abstrato.slide">Abstrato</span> · 05</strong><span data-i18n="abstrato.meta">Tela</span></div></a></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ESCULTURA (06) -->
-<section class="section section--light" id="escultura" aria-label="Escultura — Obras Tridimensionais Autorais, esculturas contemporâneas brasileiras de Rodney Silva">
+<section class="section section--light" id="escultura" aria-label="Escultura — Obras Tridimensionais Autorais, esculturas contemporâneas brasileiras de Rodney Silva" data-i18n-aria="escultura.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">06</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Escultura</span>
-        <span class="sr-only">Escultura — Obras tridimensionais autorais. Esculturas contemporâneas brasileiras assinadas por Rodney Silva (ROD7).</span>
+        <span aria-hidden="true" data-i18n="escultura.title">Escultura</span>
+        <span class="sr-only" data-i18n="escultura.sr">Escultura — Obras tridimensionais autorais. Esculturas contemporâneas brasileiras assinadas por Rodney Silva (ROD7).</span>
       </h2>
-      <span class="section__tag">— OBRA TRIDIMENSIONAL</span>
+      <span class="section__tag" data-i18n="escultura.tag">— OBRA TRIDIMENSIONAL</span>
     </header>
 
     <div class="prose reveal">
-      <p class="prose__lead">
+      <p class="prose__lead" data-i18n="escultura.lead">
         Quando o plano não basta, o gesto pede volume.
       </p>
-      <p>
+      <p data-i18n="escultura.p1">
         A <em>Escultura</em> é a continuidade natural do gesto pictórico — uma extensão da pintura
         no espaço tridimensional. O que começa na tela em camadas e sobreposições ganha matéria,
         ocupação, peso. São peças que não decoram um lugar: <em>presenciam</em>.
@@ -534,57 +547,57 @@
 
   <div class="carousel reveal" data-carousel>
     <div class="carousel__head">
-      <h3>Acervo Escultura</h3>
+      <h3 data-i18n="escultura.carousel">Acervo Escultura</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 06</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-1.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-1.jpeg" alt="Escultura contemporânea autoral — obra tridimensional de Rodney Silva (ROD7)" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 01</strong><span>Volume</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-2.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-2.jpeg" alt="Obra escultórica autoral em volume — escultura contemporânea brasileira de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 02</strong><span>Volume</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-3.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-3.jpeg" alt="Escultura tridimensional autoral — peça contemporânea original de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 03</strong><span>Volume</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-4.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-4.jpeg" alt="Obra escultórica original — escultura contemporânea de ROD7, arte tridimensional brasileira" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 04</strong><span>Volume</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-5.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-5.jpeg" alt="Escultura autoral contemporânea — peça original de Rodney Silva, obra tridimensional" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 05</strong><span>Volume</span></div></a></div>
-        <div class="carousel__slide"><a data-img="images/escultura/escultura-6.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-6.jpeg" alt="Obra tridimensional autoral — escultura contemporânea brasileira assinada por Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Escultura · 06</strong><span>Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-1.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-1.jpeg" alt="Escultura contemporânea autoral — obra tridimensional de Rodney Silva (ROD7)" data-i18n-alt="alt.escultura.1" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 01</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-2.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-2.jpeg" alt="Obra escultórica autoral em volume — escultura contemporânea brasileira de Rod7" data-i18n-alt="alt.escultura.2" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 02</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-3.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-3.jpeg" alt="Escultura tridimensional autoral — peça contemporânea original de Rodney Silva" data-i18n-alt="alt.escultura.3" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 03</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-4.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-4.jpeg" alt="Obra escultórica original — escultura contemporânea de ROD7, arte tridimensional brasileira" data-i18n-alt="alt.escultura.4" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 04</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-5.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-5.jpeg" alt="Escultura autoral contemporânea — peça original de Rodney Silva, obra tridimensional" data-i18n-alt="alt.escultura.5" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 05</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
+        <div class="carousel__slide"><a data-img="images/escultura/escultura-6.jpeg" data-cursor="zoom"><img src="images/escultura/escultura-6.jpeg" alt="Obra tridimensional autoral — escultura contemporânea brasileira assinada por Rod7" data-i18n-alt="alt.escultura.6" loading="lazy"><div class="carousel__slide-meta"><strong><span data-i18n="escultura.slide">Escultura</span> · 06</strong><span data-i18n="escultura.meta">Volume</span></div></a></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TAKI (07) — manifesto -->
-<section class="section section--taki" id="taki" aria-label="Taki pelo Mundo — Personagem Autoral de Rod7, obra colecionável">
+<section class="section section--taki" id="taki" aria-label="Taki pelo Mundo — Personagem Autoral de Rod7, obra colecionável" data-i18n-aria="taki.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">07</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Taki pelo Mundo</span>
-        <span class="sr-only">Taki pelo Mundo — personagem autoral de Rod7. Quadros colecionáveis da série Taki.</span>
+        <span aria-hidden="true" data-i18n="taki.title">Taki pelo Mundo</span>
+        <span class="sr-only" data-i18n="taki.sr">Taki pelo Mundo — personagem autoral de Rod7. Quadros colecionáveis da série Taki.</span>
       </h2>
-      <span class="section__tag">— MANIFESTO</span>
+      <span class="section__tag" data-i18n="taki.tag">— MANIFESTO</span>
     </header>
 
     <div class="taki">
       <figure class="taki__hero reveal" data-cursor="zoom">
-        <img src="images/taki/taki-1.jpeg" alt="Obra Taki — personagem coelho assimétrico, símbolo da diversidade humana — arte autoral de Rodney Silva" loading="lazy">
+        <img src="images/taki/taki-1.jpeg" alt="Obra Taki — personagem coelho assimétrico, símbolo da diversidade humana — arte autoral de Rodney Silva" data-i18n-alt="alt.taki.1" loading="lazy">
       </figure>
 
       <div class="taki__copy reveal delay-1">
-        <p class="taki__lead">
+        <p class="taki__lead" data-i18n="taki.lead">
           <em>Taki</em> é um coelho que simboliza o ser humano em toda a sua diversidade,
           lembrando que ser diferente é natural — e que cada pessoa é única.
         </p>
-        <p>Sua <em>assimetria</em> representa quem realmente somos: imperfeitos, singulares e autênticos. Nenhum de nós é igual ao outro — e é justamente nisso que está a nossa beleza.</p>
-        <p>Ele reflete nossa <em>agilidade</em> no dia a dia e a força que encontramos para nos reinventar, enfrentar desafios e seguir em frente.</p>
-        <p>Em alguns momentos, Taki usa <em>luvas de boxe</em>, representando a nossa luta diária — interna e externa — que todos vivemos.</p>
-        <p>Os fones simbolizam a <em>tecnologia</em> e o <em>futurismo</em>, conectando-nos ao agora, ao presente que pulsa e acontece.</p>
-        <p>Taki não é fixo, não é estático. Ele <em>muda</em>. Às vezes está mais leve, outras vezes mais intenso. Como nós.</p>
-        <p class="taki__motto">
+        <p data-i18n="taki.p1">Sua <em>assimetria</em> representa quem realmente somos: imperfeitos, singulares e autênticos. Nenhum de nós é igual ao outro — e é justamente nisso que está a nossa beleza.</p>
+        <p data-i18n="taki.p2">Ele reflete nossa <em>agilidade</em> no dia a dia e a força que encontramos para nos reinventar, enfrentar desafios e seguir em frente.</p>
+        <p data-i18n="taki.p3">Em alguns momentos, Taki usa <em>luvas de boxe</em>, representando a nossa luta diária — interna e externa — que todos vivemos.</p>
+        <p data-i18n="taki.p4">Os fones simbolizam a <em>tecnologia</em> e o <em>futurismo</em>, conectando-nos ao agora, ao presente que pulsa e acontece.</p>
+        <p data-i18n="taki.p5">Taki não é fixo, não é estático. Ele <em>muda</em>. Às vezes está mais leve, outras vezes mais intenso. Como nós.</p>
+        <p class="taki__motto" data-i18n="taki.motto">
           E o seu nome carrega esse significado:<br>
           <strong>Viver o presente,</strong>
           <strong>com intensidade e verdade.</strong>
@@ -595,68 +608,71 @@
 
   <div class="carousel reveal" data-carousel style="margin-top: clamp(60px, 10vh, 100px); position: relative; z-index: 1;">
     <div class="carousel__head">
-      <h3>Taki · acervo</h3>
+      <h3 data-i18n="taki.carousel">Taki · acervo</h3>
       <div class="carousel__meta">
         <span data-carousel-counter>01 / 06</span>
         <div class="carousel__progress"><span></span></div>
         <div class="carousel__nav">
-          <button class="carousel__btn" data-carousel-prev aria-label="Anterior">‹</button>
-          <button class="carousel__btn" data-carousel-next aria-label="Próximo">›</button>
+          <button class="carousel__btn" data-carousel-prev aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+          <button class="carousel__btn" data-carousel-next aria-label="Próximo" data-i18n-aria="ui.next">›</button>
         </div>
       </div>
     </div>
     <div class="carousel__viewport">
       <div class="carousel__track">
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-2.jpeg" data-cursor="zoom"><img src="images/taki/taki-2.jpeg" alt="Pintura do Taki, personagem coelho autoral — série Taki pelo Mundo de Rodney Silva, obra colecionável" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 02</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-4.jpeg" data-cursor="zoom"><img src="images/taki/taki-4.jpeg" alt="Obra colecionável da série Taki pelo Mundo — personagem autoral ROD7, arte contemporânea brasileira" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 04</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-5.jpeg" data-cursor="zoom"><img src="images/taki/taki-5.jpeg" alt="Quadro do personagem Taki — obra autoral colecionável de Rodney Silva, série Taki pelo Mundo" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 05</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-6.jpeg" data-cursor="zoom"><img src="images/taki/taki-6.jpeg" alt="Pintura colecionável do Taki — personagem-símbolo autoral de ROD7, arte contemporânea brasileira" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 06</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-7.jpeg" data-cursor="zoom"><img src="images/taki/taki-7.jpeg" alt="Obra do Taki — coelho assimétrico símbolo da diversidade humana, arte autoral de Rod7" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 07</strong><span>Tela</span></div></a></div>
-        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-8.jpeg" data-cursor="zoom"><img src="images/taki/taki-8.jpeg" alt="Quadro da série Taki pelo Mundo — personagem autoral colecionável de Rodney Silva" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 08</strong><span>Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-2.jpeg" data-cursor="zoom"><img src="images/taki/taki-2.jpeg" alt="Pintura do Taki, personagem coelho autoral — série Taki pelo Mundo de Rodney Silva, obra colecionável" data-i18n-alt="alt.taki.2" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 02</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-4.jpeg" data-cursor="zoom"><img src="images/taki/taki-4.jpeg" alt="Obra colecionável da série Taki pelo Mundo — personagem autoral ROD7, arte contemporânea brasileira" data-i18n-alt="alt.taki.4" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 04</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-5.jpeg" data-cursor="zoom"><img src="images/taki/taki-5.jpeg" alt="Quadro do personagem Taki — obra autoral colecionável de Rodney Silva, série Taki pelo Mundo" data-i18n-alt="alt.taki.5" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 05</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-6.jpeg" data-cursor="zoom"><img src="images/taki/taki-6.jpeg" alt="Pintura colecionável do Taki — personagem-símbolo autoral de ROD7, arte contemporânea brasileira" data-i18n-alt="alt.taki.6" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 06</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-7.jpeg" data-cursor="zoom"><img src="images/taki/taki-7.jpeg" alt="Obra do Taki — coelho assimétrico símbolo da diversidade humana, arte autoral de Rod7" data-i18n-alt="alt.taki.7" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 07</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
+        <div class="carousel__slide carousel__slide--portrait"><a data-img="images/taki/taki-8.jpeg" data-cursor="zoom"><img src="images/taki/taki-8.jpeg" alt="Quadro da série Taki pelo Mundo — personagem autoral colecionável de Rodney Silva" data-i18n-alt="alt.taki.8" loading="lazy"><div class="carousel__slide-meta"><strong>Taki · 08</strong><span data-i18n="taki.meta">Tela</span></div></a></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT (08) -->
-<section class="section section--light section--contact" id="contato" aria-label="Contato para encomendas, comissões artísticas, exposições e parcerias com galerias">
+<section class="section section--light section--contact" id="contato" aria-label="Contato para encomendas, comissões artísticas, exposições e parcerias com galerias" data-i18n-aria="contato.aria">
   <div class="section__container">
     <header class="section__head reveal">
       <span class="section__num">08</span>
       <h2 class="section__title">
-        <span aria-hidden="true">Contato</span>
-        <span class="sr-only">Contato para encomendas, comissões artísticas, exposições e parcerias com galerias.</span>
+        <span aria-hidden="true" data-i18n="contato.title">Contato</span>
+        <span class="sr-only" data-i18n="contato.sr">Contato para encomendas, comissões artísticas, exposições e parcerias com galerias.</span>
       </h2>
-      <span class="section__tag">— PARCERIAS · EVENTOS · PROJETOS</span>
+      <span class="section__tag" data-i18n="contato.tag">— PARCERIAS · EVENTOS · PROJETOS</span>
     </header>
 
     <div class="contact">
-      <p class="contact__eyebrow reveal">Parcerias · Eventos · Projetos</p>
+      <p class="contact__eyebrow reveal" data-i18n="contato.eyebrow">Parcerias · Eventos · Projetos</p>
 
-      <p class="contact__lead reveal">
+      <p class="contact__lead reveal" data-i18n="contato.lead">
         Arte contemporânea desenvolvida com <em>identidade</em>, <em>conceito</em> e <em>propósito</em>.
       </p>
-      <p class="contact__subtext reveal delay-1">
+      <p class="contact__subtext reveal delay-1" data-i18n="contato.subtext">
         Projetos personalizados para empresas, ambientes e experiências exclusivas.
       </p>
 
-      <p class="contact__location reveal delay-2">
+      <p class="contact__location reveal delay-2" data-i18n="contato.location">
         São Paulo  ·  Rio de Janeiro  ·  Internacional
       </p>
 
       <div class="contact__direct reveal delay-3">
         <a class="contact__direct-link"
            href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site."
+           data-i18n-href="wa.href"
            target="_blank"
            rel="noopener"
-           aria-label="Falar com Rodney pelo WhatsApp">
+           aria-label="Falar com Rodney pelo WhatsApp"
+           data-i18n-aria="contato.wa.aria">
           +55&nbsp;11&nbsp;96374-2579
         </a>
         <a class="contact__direct-link"
            href="https://www.instagram.com/rod7arte/"
            target="_blank"
            rel="noopener"
-           aria-label="Instagram @rod7arte">
+           aria-label="Instagram @rod7arte"
+           data-i18n-aria="contato.ig.aria">
           @rod7arte
         </a>
       </div>
@@ -665,8 +681,8 @@
     <footer class="footer">
       <div class="footer__row">
         <span class="footer__mark">Rod<em>7</em></span>
-        <span>© <span id="year"></span> RODNEY SILVA · TODOS OS DIREITOS RESERVADOS</span>
-        <span>VIVER O PRESENTE — COM INTENSIDADE E VERDADE</span>
+        <span>© <span id="year"></span> <span data-i18n="footer.rights">RODNEY SILVA · TODOS OS DIREITOS RESERVADOS</span></span>
+        <span data-i18n="footer.motto">VIVER O PRESENTE — COM INTENSIDADE E VERDADE</span>
       </div>
     </footer>
   </div>
@@ -674,9 +690,9 @@
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lightbox__close" id="lbClose" aria-label="Fechar">×</button>
-  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">‹</button>
-  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima">›</button>
+  <button class="lightbox__close" id="lbClose" aria-label="Fechar" data-i18n-aria="ui.close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior" data-i18n-aria="ui.prev">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima" data-i18n-aria="ui.next">›</button>
   <figure class="lightbox__figure">
     <img id="lbImg" alt="">
     <figcaption id="lbCap"></figcaption>
@@ -686,9 +702,11 @@
 <!-- FLOATING WHATSAPP -->
 <a class="wa-float"
    href="https://wa.me/5511963742579?text=Ol%C3%A1%20Rodney%2C%20vim%20pelo%20site."
+   data-i18n-href="wa.href"
    target="_blank"
    rel="noopener"
-   aria-label="Falar com Rodney pelo WhatsApp">
+   aria-label="Falar com Rodney pelo WhatsApp"
+   data-i18n-aria="contato.wa.aria">
   <svg class="wa-float__icon" viewBox="0 0 32 32" aria-hidden="true">
     <path d="M16.001 3.2C8.93 3.2 3.2 8.93 3.2 16c0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.56-1.71A12.78 12.78 0 0 0 16 28.8c7.07 0 12.8-5.73 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05A12.74 12.74 0 0 0 16.001 3.2zm0 23.36a10.55 10.55 0 0 1-5.38-1.47l-.39-.23-3.89 1.02 1.04-3.79-.25-.4A10.6 10.6 0 1 1 26.6 16c0 5.85-4.75 10.56-10.6 10.56z"/>
   </svg>
@@ -698,7 +716,8 @@
 <!-- TWEAKS root -->
 <div id="tweaks-root"></div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js" defer></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
 <script src="js/carousels.js" defer></script>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
