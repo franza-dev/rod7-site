@@ -23,6 +23,9 @@ jobs:
           server-dir: ./
           local-dir: ./
           dangerous-clean-slate: false
+          # O padrao de 30s derruba lotes grandes: a subida da pasta mural/
+          # (83 arquivos, ~7,8 MB) morreu em exatos 30s.
+          timeout: 600000
           exclude: |
             **/.git*
             **/.git*/**
