@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mural.rod7.com.br/sitemap.xml

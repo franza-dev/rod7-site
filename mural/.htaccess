@@ -1,0 +1,75 @@
+# ============================================================
+# ROD7 — Apache config for Hostinger
+# Cache-Control, compression, security headers
+# ============================================================
+
+# ----- HTTPS redirect -----
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ----- Default index -----
+DirectoryIndex index.html
+
+# ----- Disable directory listing -----
+Options -Indexes
+
+# ----- ETags (cache validation) -----
+FileETag MTime Size
+
+# ----- Cache-Control by file type -----
+<IfModule mod_headers.c>
+  # HTML: always revalidate so updates show immediately
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
+  </FilesMatch>
+
+  # CSS / JS: short cache + revalidate via ETag.
+  # Updates will show on next visit without forcing a cache clear.
+  <FilesMatch "\.(css|js|mjs)$">
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+
+  # Images: long cache (rarely change)
+  <FilesMatch "\.(jpe?g|png|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+
+  # Fonts: extra long cache
+  <FilesMatch "\.(woff2?|ttf|otf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Security headers
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ----- Gzip compression -----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf font/otf
+</IfModule>
+
+# ----- Brotli compression (if available, even better than gzip) -----
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml font/ttf font/otf
+</IfModule>
+
+# ----- MIME types (modern formats some shared hosts miss) -----
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>
+
+# ----- Custom 404 (optional, kept default) -----
+# ErrorDocument 404 /404.html
